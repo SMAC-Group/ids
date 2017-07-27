@@ -1,0 +1,18 @@
+Package: support
+Type: Package
+Title: TO DO
+Version: 1.0
+Date: 2017-05-28
+LazyData: true
+Authors@R: c(
+    person("Justin", "Lee", email = "munsheet93@gmail.com", role = c("aut","cre")),
+    person("Stephane", "Guerrier", role = "aut"),
+    person("Roberto", "Molinari", role = "aut"),
+    person("Matthew", "Beckman", role = "aut")
+    )
+Maintainer: Justin Lee <munsheet93@gmail.com>
+Description: TO DO
+Depends: R (>= 3.1.0)
+License: GPL (>= 2)
+RoxygenNote: 6.0.1.9000
+
