@@ -1,0 +1,13 @@
+---
+title: "Syllabus"
+output: 
+  rmarkdown::html_vignette:
+    fig_caption: yes
+vignette: >
+  %\VignetteIndexEntry{Syllabus}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+In this section, we briefly list, describe, and provide the syntax used to simulate time series data using the `simts` package. The following list includes some basic models available in this package:
