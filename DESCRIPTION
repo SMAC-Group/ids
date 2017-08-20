@@ -1,6 +1,6 @@
-Package: support
+Package: stat297
 Type: Package
-Title: TO DO
+Title: STAT 297: Statistical Programming Methods
 Version: 1.0
 Date: 2017-05-28
 LazyData: true
