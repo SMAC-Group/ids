@@ -70,6 +70,39 @@
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#stat297-overview" class="anchor"></a><code>stat297</code> Overview <a href="https://smac-group.com/"><img src="reference/figures/logo.png" align="right" style="width: 20%; height: 20%"></a>
 </h1></div>
+<div id="install-instructions" class="section level2">
+<h2 class="hasAnchor">
+<a href="#install-instructions" class="anchor"></a>Install Instructions</h2>
+<p>To install the <code>simts</code> package, there is currently one option: <a href="https://github.com/SMAC-Group/simts/">GitHub</a>.</p>
+<div id="installing-the-package-through-github" class="section level3">
+<h3 class="hasAnchor">
+<a href="#installing-the-package-through-github" class="anchor"></a>Installing the package through GitHub</h3>
+<p>For users who are interested in having the latest developments, this option is ideal. Though, more dependancies are required to run a stable version of the package. Most importantly, users <strong>must</strong> have a compiler installed on their machine that is compatible with R (e.g. Clang).</p>
+<p><em>The setup to obtain the development version of <code>simts</code> is platform dependent.</em></p>
+</div>
+<div id="requirements-and-dependencies" class="section level3">
+<h3 class="hasAnchor">
+<a href="#requirements-and-dependencies" class="anchor"></a>Requirements and Dependencies</h3>
+<p><strong>OS X</strong></p>
+<p>Some users report the need to use X11 to suppress shared library errors. To install X11, visit <a href="http://www.xquartz.org/">xquartz.org</a>.</p>
+<p><strong>Linux</strong></p>
+<p>Both curl and libxml are required.</p>
+<p>For <strong>Debian</strong> systems, enter the following in terminal:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">sudo</span> apt-get install curl libcurl3 libcurl3-dev libxml2 libxml2-dev</code></pre></div>
+<p>For <strong>RHEL</strong> systems, enter the following in terminal:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">sudo</span> yum install curl curl-devel libxml2 libxml2-dev</code></pre></div>
+<p><strong>All Systems</strong></p>
+<p>The following R packages are also required. If you have made it this far, run the following code in an R session and you will be ready to use the devlopment version of <code>simts</code>.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Install dependencies</span>
+<span class="kw">install.packages</span>(<span class="kw">c</span>(<span class="st">"RcppArmadillo"</span>,<span class="st">"devtools"</span>,<span class="st">"knitr"</span>,<span class="st">"rmarkdown"</span>))
+
+<span class="co"># Install the package from GitHub without Vignettes/User Guides</span>
+devtools::<span class="kw">install_github</span>(<span class="st">"SMAC-Group/simts"</span>)
+
+<span class="co"># Install the package with Vignettes/User Guides </span>
+devtools::<span class="kw">install_github</span>(<span class="st">"SMAC-Group/simts"</span>, <span class="dt">vignette =</span> <span class="ot">TRUE</span>)</code></pre></div>
+</div>
+</div>
 </div>
 </div>
   </div>

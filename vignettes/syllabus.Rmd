@@ -1,14 +1,15 @@
 ---
 title: "Syllabus"
+date: "`r Sys.Date()`"
 output: 
   rmarkdown::html_vignette:
     fig_caption: yes
 vignette: >
+  %\VignetteEngine{knitr::knitr}
   %\VignetteIndexEntry{Syllabus}
-  %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
-
+  
 # STAT 297: Statistical Programming Methods
 
 #### *Pennsylvania State University*
