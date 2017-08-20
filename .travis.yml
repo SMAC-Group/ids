@@ -3,3 +3,5 @@
 language: R
 sudo: false
 cache: packages
+notifications:
+    slack: smac-group:RCE8871oTewA5M0kqw8j7n4H
