@@ -1,6 +1,5 @@
 ---
 title: "Schedule"
-date: "`r Sys.Date()`"
 output: 
   rmarkdown::html_vignette:
     fig_caption: yes
@@ -10,8 +9,10 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-The schedule is given by day (in this case T meaning Tuesday and R meaning Thursday, and F means Friday. We may or may not cover all the topics on the given day. If we do not, the content will be made available online with disclaimers as to whether or not it will be on the midterm or not.
-
-Note: All homework is due on Sunday at 11:59 PM CDT by e-mail to balamut2 [AT] illinois [dot] edu.
-
 # Week 1
+
+- *Tuesday (08/22):* General introduction to the class
+- *Thursday (08/24):* Introduction to R. Recommended lectures:
+    - Chapter 1 of <http://r.smac-group.com>
+    - Chapter 1 (Introduction and preliminaries) of <https://cran.r-project.org/doc/manuals/R-intro.pdf>
+    - Introduction of <http://adv-r.had.co.nz/Introduction.html>
