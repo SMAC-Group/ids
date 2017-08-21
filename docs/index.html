@@ -65,44 +65,19 @@
     
 <div class="contents">
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
-<div id="stat297-overview" class="section level1">
+<!--[![Travis-CI Build Status](https://travis-ci.org/SMAC-Group/stat297.svg?branch=master)](https://travis-ci.org/SMAC-Group/stat297)-->
+<div id="welcome-to-stat-297" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
-<a href="#stat297-overview" class="anchor"></a><code>stat297</code> Overview <a href="https://smac-group.com/"><img src="reference/figures/psu.png" align="right" style="width: 20%; height: 20%"></a>
+<a href="#welcome-to-stat-297" class="anchor"></a>Welcome to STAT 297 <a href="https://smac-group.com/"><img src="reference/figures/psu2.png" align="right" style="width: 20%; height: 20%"></a>
 </h1></div>
-<div id="install-instructions" class="section level2">
-<h2 class="hasAnchor">
-<a href="#install-instructions" class="anchor"></a>Install Instructions</h2>
-<p>To install the <code>simts</code> package, there is currently one option: <a href="https://github.com/SMAC-Group/simts/">GitHub</a>.</p>
-<div id="installing-the-package-through-github" class="section level3">
-<h3 class="hasAnchor">
-<a href="#installing-the-package-through-github" class="anchor"></a>Installing the package through GitHub</h3>
-<p>For users who are interested in having the latest developments, this option is ideal. Though, more dependancies are required to run a stable version of the package. Most importantly, users <strong>must</strong> have a compiler installed on their machine that is compatible with R (e.g. Clang).</p>
-<p><em>The setup to obtain the development version of <code>simts</code> is platform dependent.</em></p>
-</div>
-<div id="requirements-and-dependencies" class="section level3">
-<h3 class="hasAnchor">
-<a href="#requirements-and-dependencies" class="anchor"></a>Requirements and Dependencies</h3>
-<p><strong>OS X</strong></p>
-<p>Some users report the need to use X11 to suppress shared library errors. To install X11, visit <a href="http://www.xquartz.org/">xquartz.org</a>.</p>
-<p><strong>Linux</strong></p>
-<p>Both curl and libxml are required.</p>
-<p>For <strong>Debian</strong> systems, enter the following in terminal:</p>
-<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">sudo</span> apt-get install curl libcurl3 libcurl3-dev libxml2 libxml2-dev</code></pre></div>
-<p>For <strong>RHEL</strong> systems, enter the following in terminal:</p>
-<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">sudo</span> yum install curl curl-devel libxml2 libxml2-dev</code></pre></div>
-<p><strong>All Systems</strong></p>
-<p>The following R packages are also required. If you have made it this far, run the following code in an R session and you will be ready to use the devlopment version of <code>simts</code>.</p>
+<p>The objective of the website is to provide a support for <em>STAT 297: Statistical Programming Methods</em> given at the Pennsylvania State University in Fall 2017. This course is intended to provide an introduction to statistical programming using the R language. It will also provide students with notions of data management, manipulation and analysis as well as of reproducible research, result-sharing and version control (using GitHub). At the end of the class, student should be able to construct the own R package, make it available on GitHub and document it using literate programming.</p>
+<p>This class will based on the textbook: “An Introduction to Statistical Programming Methods with R” , which is available here: <a href="http://r.smac-group.com" class="uri">http://r.smac-group.com</a>. This document is <strong>under development</strong> and it is therefore preferable to always access the text online to be sure you are using the most up-to-date version.</p>
+<p>This class will also be based on the <code>stat297</code> R package (and its dependencies). To install this package you can run the following commands in R:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Install dependencies</span>
-<span class="kw">install.packages</span>(<span class="kw">c</span>(<span class="st">"RcppArmadillo"</span>,<span class="st">"devtools"</span>,<span class="st">"knitr"</span>,<span class="st">"rmarkdown"</span>))
+<span class="kw">install.packages</span>(<span class="kw">c</span>(<span class="st">"devtools"</span>,<span class="st">"knitr"</span>,<span class="st">"rmarkdown"</span>))
 
-<span class="co"># Install the package from GitHub without Vignettes/User Guides</span>
-devtools::<span class="kw">install_github</span>(<span class="st">"SMAC-Group/simts"</span>)
-
-<span class="co"># Install the package with Vignettes/User Guides </span>
-devtools::<span class="kw">install_github</span>(<span class="st">"SMAC-Group/simts"</span>, <span class="dt">vignette =</span> <span class="ot">TRUE</span>)</code></pre></div>
-</div>
-</div>
+<span class="co"># Install the package from GitHub</span>
+devtools::<span class="kw">install_github</span>(<span class="st">"SMAC-Group/stat297"</span>)</code></pre></div>
 </div>
 </div>
   </div>
@@ -116,10 +91,6 @@ devtools::<span class="kw">install_github</span>(<span class="st">"SMAC-Group/si
 <li>Stephane Guerrier <br><small class="roles"> Author </small> </li>
 <li>Roberto Molinari <br><small class="roles"> Author </small> </li>
 <li>Matthew Beckman <br><small class="roles"> Author </small> </li>
-</ul>
-<h2>Dev status</h2>
-<ul class="list-unstyled">
-<li><a href="https://travis-ci.org/SMAC-Group/stat297"><img src="https://travis-ci.org/SMAC-Group/stat297.svg?branch=master" alt="Travis-CI Build Status"></a></li>
 </ul>
 </div>
 

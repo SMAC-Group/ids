@@ -1,54 +1,19 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-[![Travis-CI Build Status](https://travis-ci.org/SMAC-Group/stat297.svg?branch=master)](https://travis-ci.org/SMAC-Group/stat297)
+<!--[![Travis-CI Build Status](https://travis-ci.org/SMAC-Group/stat297.svg?branch=master)](https://travis-ci.org/SMAC-Group/stat297)-->
+Welcome to STAT 297 <a href="https://smac-group.com/"><img src="man/figures/psu2.png" align="right" style="width: 20%; height: 20%"/></a>
+=========================================================================================================================================
 
-`stat297` Overview <a href="https://smac-group.com/"><img src="man/figures/psu.png" align="right" style="width: 20%; height: 20%"/></a>
-=======================================================================================================================================
+The objective of the website is to provide a support for *STAT 297: Statistical Programming Methods* given at the Pennsylvania State University in Fall 2017. This course is intended to provide an introduction to statistical programming using the R language. It will also provide students with notions of data management, manipulation and analysis as well as of reproducible research, result-sharing and version control (using GitHub). At the end of the class, student should be able to construct the own R package, make it available on GitHub and document it using literate programming.
 
-Install Instructions
---------------------
+This class will based on the textbook: "An Introduction to Statistical Programming Methods with R" , which is available here: <http://r.smac-group.com>. This document is **under development** and it is therefore preferable to always access the text online to be sure you are using the most up-to-date version.
 
-To install the `simts` package, there is currently one option: [GitHub](https://github.com/SMAC-Group/simts/).
-
-### Installing the package through GitHub
-
-For users who are interested in having the latest developments, this option is ideal. Though, more dependancies are required to run a stable version of the package. Most importantly, users **must** have a compiler installed on their machine that is compatible with R (e.g. Clang).
-
-*The setup to obtain the development version of `simts` is platform dependent.*
-
-### Requirements and Dependencies
-
-**OS X**
-
-Some users report the need to use X11 to suppress shared library errors. To install X11, visit [xquartz.org](http://www.xquartz.org/).
-
-**Linux**
-
-Both curl and libxml are required.
-
-For **Debian** systems, enter the following in terminal:
-
-``` bash
-sudo apt-get install curl libcurl3 libcurl3-dev libxml2 libxml2-dev
-```
-
-For **RHEL** systems, enter the following in terminal:
-
-``` bash
-sudo yum install curl curl-devel libxml2 libxml2-dev
-```
-
-**All Systems**
-
-The following R packages are also required. If you have made it this far, run the following code in an R session and you will be ready to use the devlopment version of `simts`.
+This class will also be based on the `stat297` R package (and its dependencies). To install this package you can run the following commands in R:
 
 ``` r
 # Install dependencies
-install.packages(c("RcppArmadillo","devtools","knitr","rmarkdown"))
+install.packages(c("devtools","knitr","rmarkdown"))
 
-# Install the package from GitHub without Vignettes/User Guides
-devtools::install_github("SMAC-Group/simts")
-
-# Install the package with Vignettes/User Guides 
-devtools::install_github("SMAC-Group/simts", vignette = TRUE)
+# Install the package from GitHub
+devtools::install_github("SMAC-Group/stat297")
 ```
