@@ -1,6 +1,5 @@
 ---
 title: "Syllabus"
-date: "`r Sys.Date()`"
 output: 
   rmarkdown::html_vignette:
     fig_caption: yes
@@ -62,13 +61,17 @@ Bring a laptop to class each day if you have one. I encourage students to work c
 
 ### Textbooks
 
-This class will based on the textbook: "An Introduction to Statistical Programming Methods with R" , which is available here: <http://r.smac-group.com>. This document is **under development** and it is therefore preferable to always access the text online to be sure you are using the most up-to-date version. Due to its current development, you may encounter errors ranging from broken code to typos or poorly explained topics. If you do, please let us know! Simply add an issue to the GitHub repository used for this document (which can be accessed here https://github.com/SMAC-Group/ds/issues) and we will make the changes as soon as possible. In addition, if you know RMarkdown and are familiar with GitHub, make a pull request and fix an issue yourself, otherwise, if you're not familiar with these tools, they will be explained later on in the book itself.
+This class will based on the textbook: 
+
+- **Required:** [An Introduction to Statistical Programming Methods with R](http://r.smac-group.com)
+
+It is also is available here: <http://r.smac-group.com>. This document is **under development** and it is therefore preferable to always access the text online to be sure you are using the most up-to-date version. Due to its current development, you may encounter errors ranging from broken code to typos or poorly explained topics. If you do, please let us know! Simply add an issue to the GitHub repository used for this document (which can be accessed here https://github.com/SMAC-Group/ds/issues) and we will make the changes as soon as possible. In addition, if you know RMarkdown and are familiar with GitHub, make a pull request and fix an issue yourself, otherwise, if you're not familiar with these tools, they will be explained later on in the book itself.
 
 The textbooks below are also recommended and are legally available online for free. The following texts will be heavily referenced:
 
-- **Recommended:** [Advanced R Programming](http://adv-r.had.co.nz/) Hadley Wickham,
-- **Recommended:** [R Packages](http://r-pkgs.had.co.nz/)
-  Hadley Wickham.
+- **Recommended:** [Advanced R Programming](http://adv-r.had.co.nz/) Hadley Wickham
+- **Recommended:** [R Packages](http://r-pkgs.had.co.nz/) Hadley Wickham
+- **Recommended:** [An Introduction to R](https://cran.r-project.org/doc/manuals/R-intro.pdf) W. N. Venables, D. M. Smith, and the R Core Team
 
 The following textbooks are *helpful*, but not necessary to succeed in the course:
 
@@ -101,6 +104,7 @@ Most issues about classroom activities can be posted to Piazza, but you should u
 
 Learning outcomes will be assessed based on performance in each of the following categories accompanied by their impact on the overall grade:
 
+<center>
 
 | Type             | Percentage     | 
 |------------------|----------------|
@@ -110,8 +114,11 @@ Learning outcomes will be assessed based on performance in each of the following
 | Participation    | 15             | 
 | **Course Total** |*100*           |
 
+</center>
 
 Final letter grades will be determined as follows:  
+
+<center>
 
 | Letter grade | Percentage |
 |--------------|------------|
@@ -123,8 +130,9 @@ Final letter grades will be determined as follows:
 | C+           | 77-79.5%   |  
 | C            | 70-76.5%   |  
 | D            | 60-69.5%   |  
-| F            | < 60%      |  
+| F            | < 60%      |
 
+</center>
 
 ### Semester Project
 
@@ -189,12 +197,6 @@ Penn State welcomes students with disabilities into the University's educational
 
 
 # Syllabus Changes  
-
-```{r, echo=FALSE, include=FALSE}
-require(lubridate)
-
-date <- ymd(today())
-```
 
 This syllabus is subject to change as circumstances warrant; all changes will be distributed in writing (usually electronically or on Piazza) or announced in class. 
 
