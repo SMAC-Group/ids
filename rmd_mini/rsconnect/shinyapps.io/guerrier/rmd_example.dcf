@@ -1,10 +1,10 @@
 name: rmd_example
-title: rmd_example
+title: rmd_mini
 account: guerrier
 server: shinyapps.io
 appId: 205184
-bundleId: 942533
+bundleId: 949078
 url: https://guerrier.shinyapps.io/rmd_example/
-when: 1502856335.26457
+when: 1503365721.24557
 asMultiple: FALSE
 asStatic: FALSE
