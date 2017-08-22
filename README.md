@@ -4,6 +4,10 @@
 Welcome to STAT 297 <a href="https://smac-group.com/"><img src="man/figures/psu2.png" align="right" style="width: 20%; height: 20%"/></a>
 =========================================================================================================================================
 
+<font color="red">**Please answer this questionnaire before you come to class on August 24th!** </font>
+
+-   <https://goo.gl/forms/8kti0YDWSFLTd3LD3>
+
 The objective of the website is to provide a support for *STAT 297: Statistical Programming Methods* given at the Pennsylvania State University in Fall 2017. This course is intended to provide an introduction to statistical programming using the R language. It will also provide students with notions of data management, manipulation and analysis as well as of reproducible research, result-sharing and version control (using GitHub). At the end of the class, student should be able to construct the own R package, make it available on GitHub and document it using literate programming.
 
 This class will based on the textbook: "An Introduction to Statistical Programming Methods with R" , which is available here: <http://r.smac-group.com>. This document is **under development** and it is therefore preferable to always access the text online to be sure you are using the most up-to-date version.
