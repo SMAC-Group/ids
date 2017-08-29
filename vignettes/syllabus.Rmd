@@ -13,7 +13,7 @@ vignette: >
 
 ### Location and Time
 
-- **Location:** Huck Life Sciences Building 010
+- **Location:** Huck Life Sciences Building 10
 - **Time:** Tuesdays and Thursdays 12:05PM - 1:20PM
 
 ### Course Websites
@@ -30,13 +30,13 @@ vignette: >
 - **Name:** Stéphane Guerrier
 - **Email:** stephane@psu.edu
 - **Office:** Thomas Bldg 310
-- **Office Hours:** TBA
+- **Office Hours:** Tuesdays 3PM to 5PM (in Thomas Bldg 310)
 
 #### Teaching Assistant 
 
 - **Name:** Justin Lee
 - **Email:** justinlee@psu.edu
-- **Office Hours:** TBA
+- **Office Hours:** Tuesdays 3PM to 5PM (in Thomas Bldg 310)
 
 # Course Description
 
