@@ -73,18 +73,23 @@
 <p><font color="red">Please note that the new room assignment for the classroom is <strong>Life Science Building 10</strong>!</font></p>
 <p>The objective of the website is to provide a support for <em>STAT 297: Statistical Programming Methods</em> given at the Pennsylvania State University in Fall 2017. This course is intended to provide an introduction to statistical programming using the R language. It will also provide students with notions of data management, manipulation and analysis as well as of reproducible research, result-sharing and version control (using GitHub). At the end of the class, student should be able to construct the own R package, make it available on GitHub and document it using literate programming.</p>
 <p>This class will based on the textbook: “An Introduction to Statistical Programming Methods with R” , which is available here: <a href="http://r.smac-group.com" class="uri">http://r.smac-group.com</a>. This document is <strong>under development</strong> and it is therefore preferable to always access the text online to be sure you are using the most up-to-date version.</p>
-<p>This class will also be based on the <code>stat297</code> R package (and its dependencies). To install this package you can run the following commands in R:</p>
+<p>This class will also be based on the <code>stat297</code> R package (and its dependencies). To install this package you can run the following commands in R. <strong>Make sure to continuously update package every week, for we are adding new functions and instructions every day.</strong>:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Install dependencies</span>
 <span class="kw">install.packages</span>(<span class="kw">c</span>(<span class="st">"devtools"</span>,<span class="st">"knitr"</span>,<span class="st">"rmarkdown"</span>))
 
-<span class="co"># Install the package from GitHub</span>
-devtools::<span class="kw">install_github</span>(<span class="st">"SMAC-Group/stat297"</span>)</code></pre></div>
+<span class="co"># Install/Update the package from GitHub</span>
+devtools::<span class="kw">install_github</span>(<span class="st">"SMAC-Group/stat297"</span>)
+
+<span class="co"># Another way to update the package</span>
+<span class="kw">library</span>(stat297)
+<span class="kw">update_stat297</span>()</code></pre></div>
 </div>
 </div>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>License</h2>
+    <h2 class="hasAnchor">
+<a href="#sidebar" class="anchor"></a>License</h2>
 <p><a href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a></p>
 <h2>Developers</h2>
 <ul class="list-unstyled">
