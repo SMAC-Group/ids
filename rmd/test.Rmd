@@ -1,7 +1,33 @@
 ---
 title: 'RMarkdown Playground'
-output: html_document
+output:
+   html_document:
+      theme: cerulean
+      highlight: tango
 ---
+
+<style type='text/css'>
+  body, td {
+    font-size: 13px;
+  }
+</style>
+
 
 Experiment with the Rmd Code below and test output.
 
+Inline Code highlighting with `mean(x)`. 
+
+```{r calculate_mean, cache = TRUE}
+n = 25
+set.seed(42)
+x = runif(n) # Generates 25 random numbers
+
+mean(x)
+```
+
+If you do not want code to run just use:
+```r
+mean(x)
+```
+
+You can also embed a calculation within the text to show that `r mean(x)` is the mean
