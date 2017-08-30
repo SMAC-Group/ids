@@ -14,8 +14,48 @@ make_files = function(input, rmd = FALSE){
   if (input$ref){
     cat("bibliography: biblio.bib\n")
   }
-  cat("output: html_document\n")
+  if ((input$theme && input$theme_select != "default") || (input$high && input$high_select != "default")){
+    cat("output:\n")
+    cat("   html_document:\n")
+
+    if (input$theme && input$theme_select != "default"){
+      cat("      theme: ")
+      cat(input$theme_select)
+      cat("\n")
+    }
+
+    if (input$high && input$high_select != "default"){
+      cat("      highlight: ")
+      cat(input$high_select)
+      cat("\n")
+    }
+
+  }else{
+    cat("output: html_document\n")
+  }
   cat("---\n\n")
+
+  if (input$font || input$font_size){
+    cat("<style type='text/css'>\n")
+
+    cat("  body, td {\n")
+
+    if (input$font){
+      cat("    font-family: ")
+      cat(input$font_select)
+      cat(";\n")
+    }
+
+    if (input$font_size){
+      cat("    font-size: ")
+      cat(input$font_size_select)
+      cat("px;\n")
+    }
+    cat("  }\n")
+
+    cat("</style>\n\n\n")
+  }
+
 
   cat("Experiment with the Rmd Code below and test output.\n\n")
 
@@ -228,8 +268,57 @@ ui <- shinyUI(
           )
       ),
 
-        checkboxInput("ref", label = "Reference", value = FALSE)
+      checkboxInput("ref", label = "Reference", value = FALSE),
+
+      checkboxInput("theme", label = "Change theme", value = FALSE),
+
+      conditionalPanel(
+        condition = "input.theme",
+        selectInput("theme_select", label = "Select theme",
+                    choices = list("default", "cerulean", "journal", "flatly", "readable",
+                                   "spacelab", "united", "cosmo", "lumen", "paper", "sandstone",
+                                   "simplex", "yeti"),
+                    selected = "default")
       ),
+
+      checkboxInput("high", label = "Change syntax highlighting", value = FALSE),
+
+      conditionalPanel(
+        condition = "input.high",
+        selectInput("high_select", label = "Select style:",
+                    choices = list("default", "tango", "pygments", "kate",
+                                   "monochrome", "espresso", "zenburn", "haddock", "textmate"),
+                    selected = "default")
+      ),
+
+
+      checkboxInput("font", label = "Change font", value = FALSE),
+
+      conditionalPanel(
+        condition = "input.font",
+        selectInput("font_select", label = "Select font:",
+                    choices = list("Agency FB", "Antiqua", "Architect", "Arial",
+                                   "BankFuturistic", "BankGothic", "Blackletter",
+                                   "Blagovest", "Calibri", "Comic Sans MS",
+                                   "Courier", "Cursive", "Decorative", "Fantasy",
+                                   "Fraktur", "Frosty", "Garamond", "Georgia",
+                                   "Helvetica", "Impact", "Minion", "Modern",
+                                   "Monospace", "Open Sans", "Palatino",
+                                   "Roman", "Sans-serif", "Serif", "Script",
+                                   "Swiss", "Times", "Times New Roman",
+                                   "Tw Cen MT", "Verdana"),
+                    selected = "Sans-serif")
+      ),
+
+      checkboxInput("font_size", label = "Change font size", value = FALSE),
+
+      conditionalPanel(
+        condition = "input.font_size",
+        sliderInput("font_size_select", "Select size:", 12,
+                    min = 8, max = 16)
+      )
+
+    ),
 
       mainPanel(
         tabsetPanel(id = "tabs",
