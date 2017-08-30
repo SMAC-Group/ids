@@ -2,3 +2,4 @@
 
 export(mc_int)
 export(runShiny)
+export(update_stat297)
