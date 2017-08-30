@@ -1,6 +1,7 @@
-# Adapted from r-bloggers
-# Use runShiny('rmd') to call rmd_full
-# Use runShiny('rmd_mini') to call rmd_mini
+#' Adapted from r-bloggers
+#' Use runShiny('rmd') to call rmd_full
+#' Use runShiny('rmd_mini') to call rmd_mini
+#' @export
 runShiny = function(example){
   # locate all the shiny app examples that exist
   validShiny = list.files(system.file("shiny-examples", package = "stat297"))
