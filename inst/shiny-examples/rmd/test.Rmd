@@ -1,19 +1,21 @@
 ---
 title: 'RMarkdown Playground'
+bibliography: biblio.bib
 output:
    html_document:
-      theme: cerulean
-      highlight: tango
+      theme: journal
 ---
 
 <style type='text/css'>
   body, td {
-    font-size: 13px;
+    font-family: Minion;
   }
 </style>
 
 
 Experiment with the Rmd Code below and test output.
+
+Here are some examples: @harrar2013taste and @harrar2011there (see References section for details).
 
 Inline Code highlighting with `mean(x)`. 
 
@@ -31,3 +33,4 @@ mean(x)
 ```
 
 You can also embed a calculation within the text to show that `r mean(x)` is the mean
+# References
