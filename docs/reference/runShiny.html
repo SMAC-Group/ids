@@ -6,9 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Adapted from r-bloggers
-Use runShiny('rmd') to call rmd_full
-Use runShiny('rmd_mini') to call rmd_mini — runShiny â€¢ stat297</title>
+<title>Run Shiny Applications for stat297 — runShiny â€¢ stat297</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -85,25 +83,56 @@ Use runShiny('rmd_mini') to call rmd_mini — runShiny â€¢ stat297</title>
       <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Adapted from r-bloggers
-Use runShiny('rmd') to call rmd_full
-Use runShiny('rmd_mini') to call rmd_mini</h1>
+    <h1>Run Shiny Applications for stat297</h1>
     </div>
 
     
-    <p>Adapted from r-bloggers
-Use runShiny('rmd') to call rmd_full
-Use runShiny('rmd_mini') to call rmd_mini</p>
+    <p>Use runShiny('rmd') to call rmd_full.
+Use runShiny('rmd_mini') to call rmd_min.</p>
     
 
     <pre class="usage"><span class='fu'>runShiny</span>(<span class='no'>example</span>)</pre>
-        
+    
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>example</th>
+      <td><p>A <code>string</code> denoting the Shiny application name.
+Currently 'rmd' and 'rmd_mini' are available. Default is 'rmd'.</p></td>
+    </tr>
+    </table>
+    
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
+    <p>A running implementation</p>
+    
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+
+    <p>Adapted from r-bloggers</p>
+    
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><span class='co'># NOT RUN {</span>
+<span class='fu'>runShiny</span>(<span class='st'>'rmd'</span>)
+<span class='fu'>runShiny</span>(<span class='st'>'rmd_mini'</span>)
+<span class='co'># }</span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-                </ul>
+      <li><a href="#arguments">Arguments</a></li>
+      
+      <li><a href="#value">Value</a></li>
+
+      <li><a href="#details">Details</a></li>
+      
+      <li><a href="#examples">Examples</a></li>
+    </ul>
+
+    <h2>Author</h2>
+    
+Justin Lee
 
   </div>
 </div>

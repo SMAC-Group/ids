@@ -21,9 +21,10 @@ Use runShiny('rmd_mini') to call rmd_min.
 Adapted from r-bloggers
 }
 \examples{
+\dontrun{
 runShiny('rmd')
 runShiny('rmd_mini')
-
+}
 }
 \author{
 Justin Lee
