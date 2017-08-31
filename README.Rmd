@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 library(stat297)
 ```
 
-<!--[![Travis-CI Build Status](https://travis-ci.org/SMAC-Group/stat297.svg?branch=master)](https://travis-ci.org/SMAC-Group/stat297)-->
+<[![Travis-CI Build Status](https://travis-ci.org/SMAC-Group/stat297.svg?branch=master)](https://travis-ci.org/SMAC-Group/stat297)
 
 # Welcome to STAT 297 <a href="https://smac-group.com/"><img src="man/figures/psu2.png" align="right" style="width: 20%; height: 20%"/></a>
 
