@@ -60,7 +60,7 @@ make_files = function(input, rmd = FALSE){
   cat("Experiment with the Rmd Code below and test output.\n\n")
 
   if (input$ref){
-    cat("Here are some examples: @harrar2013taste and @harrar2011there (see References section for details).\n\n")
+    cat("Here are some examples: @harrar2013taste ; [see also @harrar2011there].\n\n")
   }
 
   if(input$header){
@@ -224,7 +224,7 @@ make_files = function(input, rmd = FALSE){
 
   # Last section...
   if (input$ref){
-    cat("\n# References\n")
+    cat("\n\n# References\n")
   }
 
   if(rmd){

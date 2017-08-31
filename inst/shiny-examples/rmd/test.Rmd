@@ -1,36 +1,13 @@
 ---
 title: 'RMarkdown Playground'
 bibliography: biblio.bib
-output:
-   html_document:
-      theme: journal
+output: html_document
 ---
-
-<style type='text/css'>
-  body, td {
-    font-family: Minion;
-  }
-</style>
-
 
 Experiment with the Rmd Code below and test output.
 
-Here are some examples: @harrar2013taste and @harrar2011there (see References section for details).
+Here are some examples: @harrar2013taste ; [see also @harrar2011there].
 
-Inline Code highlighting with `mean(x)`. 
 
-```{r calculate_mean, cache = TRUE}
-n = 25
-set.seed(42)
-x = runif(n) # Generates 25 random numbers
 
-mean(x)
-```
-
-If you do not want code to run just use:
-```r
-mean(x)
-```
-
-You can also embed a calculation within the text to show that `r mean(x)` is the mean
 # References
