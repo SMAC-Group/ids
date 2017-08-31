@@ -1,3 +1,5 @@
+#' @title Internal function for RMarkdown app
+#'
 #' @export
 make_files = function(input, rmd = FALSE){
   if (rmd){

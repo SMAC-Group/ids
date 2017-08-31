@@ -1,9 +1,3 @@
-library(shiny)
-library(knitr)
-library(rmarkdown)
-library(miniUI)
-library(stat297)
-
 ui <- miniPage(
   gadgetTitleBar("R Markdown Playground"),
 

@@ -1,0 +1,30 @@
+---
+title: "Schedule"
+output: 
+  rmarkdown::html_vignette:
+    fig_caption: yes
+vignette: >
+  %\VignetteEngine{knitr::knitr}
+  %\VignetteIndexEntry{Syllabus}
+  %\VignetteEncoding{UTF-8}
+---
+
+# Week 1
+
+- *Tuesday (08/22):* General introduction to the class
+- *Thursday (08/24):* Introduction to R
+    - Install R and RStudio
+    - Read Chapter 1 of [An Introduction to Statistical Programming Methods with R](http://r.smac-group.com)
+    - Additional Reading: 
+        - Chapter 1 (Introduction and preliminaries) of [An Introduction to R](https://cran.r-project.org/doc/manuals/R-intro.pdf)
+        - Introduction of [Avdanced R](http://adv-r.had.co.nz/Introduction.html)
+        
+# Week 2
+
+- *Tuesday (08/29) \& Thursday (08/31):* Introduction to RMarkdown
+    - Install RMarkdown R package
+    - Read Chapter 2 of [An Introduction to Statistical Programming Methods with R](http://r.smac-group.com)
+    - Additional Reading: 
+        - Introduction to Latex - Chapter 1 of [The Not So Short Introduction to LaTeX](https://tobi.oetiker.ch/lshort/lshort.pdf)
+        - Introduction to Bibtex - [using bibtex: a short guide](https://www.economics.utoronto.ca/osborne/latex/BIBTEX.HTM)
+        - Overview of `knitr` - [Elegant, flexible, and fast dynamic report generation with R](https://yihui.name/knitr/)

@@ -1,0 +1,14 @@
+---
+title: "Homework"
+output: 
+  rmarkdown::html_vignette:
+    fig_caption: yes
+vignette: >
+  %\VignetteEngine{knitr::knitr}
+  %\VignetteIndexEntry{Syllabus}
+  %\VignetteEncoding{UTF-8}
+---
+
+# Homework 1
+
+More info coming soon.
