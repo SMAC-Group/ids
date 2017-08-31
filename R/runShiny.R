@@ -8,9 +8,10 @@
 #' @return A running implementation
 #' @author Justin Lee
 #' @examples
+#' \dontrun{
 #' runShiny('rmd')
 #' runShiny('rmd_mini')
-#'
+#' }
 #' @export
 runShiny = function(example){
   # locate all the shiny app examples that exist
