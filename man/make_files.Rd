@@ -6,6 +6,12 @@
 \usage{
 make_files(input, rmd = FALSE)
 }
+\arguments{
+\item{input}{A \code{data frame} coming fronm shiny app.}
+
+\item{rmd}{A \code{boolean} to indicate if the output should be a rmd file or
+simply print output.}
+}
 \description{
 Create RMD file need for app or print content.
 }

@@ -1,6 +1,9 @@
 #' @title Internal function for RMarkdown app
 #'
 #' @description Create RMD file need for app or print content.
+#' @param input A \code{data frame} coming fronm shiny app.
+#' @param rmd A \code{boolean} to indicate if the output should be a rmd file or
+#' simply print output.
 #' @export
 make_files = function(input, rmd = FALSE){
   if (rmd){
