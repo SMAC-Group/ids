@@ -28,3 +28,13 @@ vignette: >
         - Introduction to Latex - Chapter 1 of [The Not So Short Introduction to LaTeX](https://tobi.oetiker.ch/lshort/lshort.pdf)
         - Introduction to Bibtex - [using bibtex: a short guide](https://www.economics.utoronto.ca/osborne/latex/BIBTEX.HTM)
         - Overview of `knitr` - [Elegant, flexible, and fast dynamic report generation with R](https://yihui.name/knitr/)
+        
+# Week 3
+
+- *Tuesday (09/05):* Introduction to GitHub
+    - Read Chapter 3 of [An Introduction to Statistical Programming Methods with R](http://r.smac-group.com) *(coming soon!)*
+    - Additional Reading: 
+        - [Happy Git and GitHub for the useR](http://happygitwithr.com/index.html) by Jenny Bryan
+        
+- *Thursday (09/05):* Data structures in R
+    - Read Section 4.1 of [An Introduction to Statistical Programming Methods with R](http://r.smac-group.com) *(coming soon!)* 
