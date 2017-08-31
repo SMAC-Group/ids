@@ -6,3 +6,6 @@
 \usage{
 make_files(input, rmd = FALSE)
 }
+\description{
+Create RMD file need for app or print content.
+}

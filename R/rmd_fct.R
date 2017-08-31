@@ -1,5 +1,6 @@
 #' @title Internal function for RMarkdown app
 #'
+#' @description Create RMD file need for app or print content.
 #' @export
 make_files = function(input, rmd = FALSE){
   if (rmd){
