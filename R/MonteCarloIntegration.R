@@ -16,6 +16,7 @@
 #'      \item{var}{Estimated variance of the estimator}
 #' }
 #' @author Stephane Guerrier
+#' @importFrom stats runif
 #' @export
 #' @examples
 #' mc_int(x_range = c(0,1), fun = "x^2", B = 10^5)
@@ -24,23 +25,23 @@ mc_int = function(x_range, fun, B, seed = 1291){
   # A few checks
   # Check x_range
   if (length(x_range) != 2 || x_range[1] >= x_range[2]){
-    error("x_range is uncorrely specified")
+    stop("x_range is incorrectly specified")
   }
 
   # Check fun
   if (class(fun) != "character"){
-    error("fun is uncorrectly specified and should be a character")
+    stop("fun is incorrectly specified and should be a character")
   }
 
   x = mean(x_range)
   test_fun = try(eval(parse(text = fun)), silent = TRUE)
   if (class(test_fun) == "try-error"){
-    error("fun cannot be evaluated")
+    stop("fun cannot be evaluated")
   }
 
   # Check B
   if (B < 1){
-    error("B is uncorrely specified")
+    error("B is incorrectly specified")
   }
 
   # Set seed

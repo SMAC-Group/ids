@@ -2,14 +2,29 @@
 % Please edit documentation in R/runShiny.R
 \name{runShiny}
 \alias{runShiny}
-\title{Adapted from r-bloggers
-Use runShiny('rmd') to call rmd_full
-Use runShiny('rmd_mini') to call rmd_mini}
+\title{Run Shiny Applications for stat297}
 \usage{
 runShiny(example)
 }
+\arguments{
+\item{example}{A \code{string} denoting the Shiny application name.
+Currently 'rmd' and 'rmd_mini' are available. Default is 'rmd'.}
+}
+\value{
+A running implementation
+}
 \description{
+Use runShiny('rmd') to call rmd_full.
+Use runShiny('rmd_mini') to call rmd_min.
+}
+\details{
 Adapted from r-bloggers
-Use runShiny('rmd') to call rmd_full
-Use runShiny('rmd_mini') to call rmd_mini
+}
+\examples{
+runShiny('rmd')
+runShiny('rmd_mini')
+
+}
+\author{
+Justin Lee
 }

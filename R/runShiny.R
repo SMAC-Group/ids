@@ -1,6 +1,16 @@
 #' Adapted from r-bloggers
-#' Use runShiny('rmd') to call rmd_full
-#' Use runShiny('rmd_mini') to call rmd_mini
+#' @title Run Shiny Applications for stat297
+#' @description
+#' Use runShiny('rmd') to call rmd_full.
+#' Use runShiny('rmd_mini') to call rmd_min.
+#' @param example A \code{string} denoting the Shiny application name.
+#' Currently 'rmd' and 'rmd_mini' are available. Default is 'rmd'.
+#' @return A running implementation
+#' @author Justin Lee
+#' @examples
+#' runShiny('rmd')
+#' runShiny('rmd_mini')
+#'
 #' @export
 runShiny = function(example){
   # locate all the shiny app examples that exist
