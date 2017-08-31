@@ -1,6 +1,19 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-<!--[![Travis-CI Build Status](https://travis-ci.org/SMAC-Group/stat297.svg?branch=master)](https://travis-ci.org/SMAC-Group/stat297)-->
+    ## Loading required package: shiny
+
+    ## Warning: package 'shiny' was built under R version 3.4.1
+
+    ## Loading required package: devtools
+
+    ## Warning: package 'devtools' was built under R version 3.4.1
+
+    ## Loading required package: knitr
+
+    ## Loading required package: rmarkdown
+
+&lt;[![Travis-CI Build Status](https://travis-ci.org/SMAC-Group/stat297.svg?branch=master)](https://travis-ci.org/SMAC-Group/stat297)
+
 Welcome to STAT 297 <a href="https://smac-group.com/"><img src="man/figures/psu2.png" align="right" style="width: 20%; height: 20%"/></a>
 =========================================================================================================================================
 
