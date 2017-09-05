@@ -70,7 +70,83 @@
 <div id="homework-1" class="section level1">
 <h1 class="hasAnchor">
 <a href="#homework-1" class="anchor"></a>Homework 1</h1>
-<p>More info coming soon.</p>
+<div class="alert alert-info">
+<p><strong>Important:</strong> To submit your homework share your GitHub repository with <strong>stephaneguerrier</strong> and <strong>munsheet</strong> by the deadline (i.e. 09/14/17 at 4PM). Do not modify your homework after the deadline. We will grade the most recent (~ 4PM) portion of your RMarkdown file.</p>
+</div>
+<p>The objectives of this homework assignment are the following</p>
+<ul>
+<li>Build your own RMarkdown document;</li>
+<li>Master different aspects of RMarkdown syntax;</li>
+<li>Become familiar with GitHub as collaborative tool.</li>
+</ul>
+<p>To start, create a (perferably private) GitHub repository for your group, and name it <strong>stat297hw1</strong>. Once again, make sure to add <strong>munsheet</strong> and <strong>stephaneguerrier</strong> as collaborators. This project <strong>must</strong> be done using GitHub and respect the following requirements:</p>
+<ul>
+<li>All members of the group must <code>commit</code> at least once.</li>
+<li>All commit messages must be reasonably <code>clear</code> and <code>meaningful</code>.<br>
+</li>
+<li>Your GitHub repository much include at least one <code>issue</code> containing some form of TO DO list.</li>
+</ul>
+<p>In your repository create a file called  providing an HTML output with the theme <code>cerulean</code> and syntax highlighting <code>tango</code>. This file should contain the following elements:</p>
+<ol style="list-style-type: decimal">
+<li>A “title” section which should <em>at least</em> include:
+<ul>
+<li>A title (e.g. Homework 1)</li>
+<li>The authors</li>
+<li>The date (think of using <code>Sys.time()</code>)</li>
+</ul>
+</li>
+<li><p>A section called “Introduction” where you provide a short summary of the structure of your homework. Moreover, record a short video to introduce your group and include it in your R Markdown document.</p></li>
+<li>
+<p>A section called “Group Members”. This sections should have one sub-section for each group member in your team. For example, a group with three members should have three biographies in total. Each of these sub-sections (named after each group member) should include small biographies containing <em>at least</em> the following elements:</p>
+<ul>
+<li>A picture of your choice (preferably of yourself). Make sure to include a caption for this image.</li>
+<li>A paragraph describing your favorite hobby as well as one interesting fact about yourself.</li>
+<li>Your favorite quote in blockquote format and be sure to reference your quote using BibTex.</li>
+<li>A table having two columns (first column containing the classes you are following this semester; second column containing the time of these classes).</li>
+</ul>
+</li>
+<li>
+<p>A section called “R Markdown Syntax”, where you will demonstrate your R Markdown skills! In this section make sure to:</p>
+<ul>
+<li>Show an example where the chunk option <code>cache = T</code> leads to a misleading answer. This example must be different from the one presented in the textbook.</li>
+<li>Simulate 100 random samples from a standard normal distribution using the function <code>rnorm()</code>. Store these 100 values in a vector called <code>x</code>. Then, compute the empirical median, mean and variance of <code>x</code>. Are these results different from 0, 0 and 1 (their respective theoretical values)? Is this result surprising? Justify your answer.</li>
+<li>Include a graph showing the histogram of <code>x</code> (make sure to include a caption to this figure), this can be done in R using the function <code>hist()</code>.</li>
+<li><p>Include the equation below: <span class="math display">\[
+\begin{aligned}
+     \mathbb{E} \left[ \text{var} \left\{
+                     \boldsymbol{v}_1\left(
+                       \hat{\boldsymbol{\theta}},n\right) \big|
+                     \hat{\boldsymbol{\theta}} \right\}  \right] 
+&amp;=
+                 \text{var} \left\{ \mathbf{v}_1\left(
+                     \boldsymbol{\theta}_0,n\right)  \right\}  +
+                 \mathbb{E} \left[\mathcal{O}_p\left\{
+{\bf D}_1(\boldsymbol{\theta}^*,n)(\hat{\boldsymbol{\theta}} - \boldsymbol{\theta}_{0}), 
+\dots,
+{\bf D}_p(\boldsymbol{\theta}^*,n)(\boldsymbol{\theta} - \boldsymbol{\theta}_{0})
+\right\}\right]\\
+    &amp;= \text{var} \left\{ \mathbf{v}_1\left( \boldsymbol{\theta}_0,n\right)  \right\}  + \mathcal{O}\left(n^{-2}\right).
+\end{aligned}
+\]</span></p></li>
+<li>Include the following <em>in-line</em> equation: <span class="math inline">\(\mathbf{A} \equiv \left[a_{i,j}\right]_{i,j = 1, \ldots, p}\)</span>.</li>
+<li>Include the following text in blue: <font color="blue">“Vérité dans un temps, erreur dans un autre.”, Charles de Montesquieu</font>
+</li>
+<li>Include a “More info” button with hide/unhide functionality such as:
+<button data-toggle="collapse" data-target="#demo">
+More info
+</button>
+<div id="demo" class="collapse">
+<p>Some additional info… :)</p>
+</div>
+</li>
+<li><p>Include a “color box” such as the one below:</p></li>
+</ul>
+<div class="alert alert-success">
+<p><strong>Some important Info:</strong> something</p>
+</div>
+</li>
+<li><p>A “References” section that contains all the references used in your document.</p></li>
+</ol>
 </div>
 </div>
   </div>
