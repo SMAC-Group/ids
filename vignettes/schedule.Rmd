@@ -38,3 +38,11 @@ vignette: >
         
 - *Thursday (09/05):* Data structures in R
     - Read Section 4.1 of [An Introduction to Statistical Programming Methods with R](http://r.smac-group.com) *(coming soon!)* 
+    
+    
+# Week 4
+
+- *Tuesday (09/12) and Thursday (09/14)* Data structures in R
+    - Read Chapter 3 of [An Introduction to Statistical Programming Methods with R](http://r.smac-group.com) *(more sections coming soon!)*
+    - Additional Reading: 
+        - Chapter on Data structures of [Advanced R](http://adv-r.had.co.nz/Data-structures.html) by Hadley Wickham
