@@ -9,7 +9,7 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-# Week 1
+## Week 1
 
 - *Tuesday (08/22):* General introduction to the class
 - *Thursday (08/24):* Introduction to R
@@ -19,7 +19,7 @@ vignette: >
         - Chapter 1 (Introduction and preliminaries) of [An Introduction to R](https://cran.r-project.org/doc/manuals/R-intro.pdf)
         - Introduction of [Avdanced R](http://adv-r.had.co.nz/Introduction.html)
         
-# Week 2
+## Week 2
 
 - *Tuesday (08/29) \& Thursday (08/31):* Introduction to RMarkdown
     - Install RMarkdown R package
@@ -29,7 +29,7 @@ vignette: >
         - Introduction to Bibtex - [using bibtex: a short guide](https://www.economics.utoronto.ca/osborne/latex/BIBTEX.HTM)
         - Overview of `knitr` - [Elegant, flexible, and fast dynamic report generation with R](https://yihui.name/knitr/)
         
-# Week 3
+## Week 3
 
 - *Tuesday (09/05):* Introduction to GitHub
     - Read Chapter 3 of [An Introduction to Statistical Programming Methods with R](http://r.smac-group.com) *(coming soon!)*
@@ -40,7 +40,7 @@ vignette: >
     - Read Section 4.1 of [An Introduction to Statistical Programming Methods with R](http://r.smac-group.com) *(coming soon!)* 
     
     
-# Week 4
+## Week 4
 
 - *Tuesday (09/12) and Thursday (09/14)* Data structures in R
     - Read Chapter 3 of [An Introduction to Statistical Programming Methods with R](http://r.smac-group.com) *(more sections coming soon!)*
