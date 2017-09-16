@@ -1,3 +1,5 @@
+library(stat297)
+
 ui <- miniPage(
   gadgetTitleBar("R Markdown Playground"),
 

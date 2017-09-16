@@ -1,3 +1,5 @@
+library(stat297)
+
 ui <- shinyUI(
   fluidPage(
     title = "R Markdown Playground",
