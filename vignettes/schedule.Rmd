@@ -40,9 +40,15 @@ vignette: >
     - Read Section 4.1 of [An Introduction to Statistical Programming Methods with R](http://r.smac-group.com) *(coming soon!)* 
     
     
-## Week 4
+## Weeks 4 & 5
 
-- *Tuesday (09/12) and Thursday (09/14)* Data structures in R
-    - Read Chapter 3 of [An Introduction to Statistical Programming Methods with R](http://r.smac-group.com) *(more sections coming soon!)*
+- *Tuesday (09/12), Thursday (09/14), Tuesday (09/19) and Thursday (09/21)* Data structures in R
+    - Read Chapter 4 of [An Introduction to Statistical Programming Methods with R](http://r.smac-group.com)
     - Additional Reading: 
         - Chapter on Data structures of [Advanced R](http://adv-r.had.co.nz/Data-structures.html) by Hadley Wickham
+        - Chapter on Subsetting of [Advanced R](http://adv-r.had.co.nz/Subsetting.html) by Hadley Wickham
+ 
+## Weeks 6 & 7       
+        
+- *Tuesday (09/26), Thursday (09/28), Tuesday (10/03) and Thursday (10/05)* Control Structures in R
+    - Read Chapter 5 of [An Introduction to Statistical Programming Methods with R](http://r.smac-group.com) *(more sections coming soon!)*
