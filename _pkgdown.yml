@@ -10,6 +10,8 @@ navbar:
     href: articles/schedule.html
   - text: Homework
     href: articles/homework.html
+  - text: Project
+    href: articles/project.html
   - text: Reference
     href: reference/index.html
   right:
