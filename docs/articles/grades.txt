@@ -1,0 +1,141 @@
+GITHUB ID: jbw5332
+James Weaver, Addison Hayes, Jae Yun Jeong
+
+- Title section (5/5)
+- Introduction (3/5)
+	- (-2) Syntax correct but video not working 
+- Group Members (10/10)
+- R Markdown Syntax (13/15)
+	- (-2) No explanation of cache = T 
+- References (5/5)
+- Misc (11/10)
+	- (-1) No HTML file generated 
+	- (+2) Good use of informative commit messages 
+- Total (97/100) 
+
+GITHUB ID: zzh1124
+Zihan Zhang, Thomas Martin and Xinjiu Zhou
+- Title section (5/5)
+- Introduction (5/5)
+- Group Members (10/10)
+- R Markdown Syntax (13/15)
+	- (-2) No explanation of cache = T 
+	- (-0) Wrong functionality of "More Info" but interesting
+- References (5/5)
+- Misc (10/10)
+	- (+2) Good use of informative commit messages 
+	- (-2) No theme cerulean and syntax highlighting tango
+- Total (98/100) 
+
+
+GITHUB ID: spearman666
+Ryan Voyack, Marshall Malino and Jiaan Wan
+- Title section (5/5)
+- Introduction (3/5)
+	- (-2) Syntax correct but video not working in HTML 
+- Group Members (9/10)
+	- (-1) Marshall's image is missing
+- R Markdown Syntax (15/15)
+=- References (3/5)
+	- (-2) Bibliography file does not exist 
+- Misc (7/10)
+	- (-1) No HTML file generated 
+	- (-1) Make sure to check the output before submission  
+	- (-2) No theme cerulean and syntax highlighting tango
+	- (+1) Good communication in Issues but non-informative commits 
+- Total (91/100) 
+
+
+GITHUB ID: stat297hw1rdt 
+Ryan Haney, Darragh Caruso, and Tara Peng
+- Title section (5/5)
+- Introduction (2/5)
+	- (-3) Video missing
+- Group Members (10/10)
+- R Markdown Syntax (14/15)
+	- (-1) Small error in LaTeX
+- References (3/5)
+	- (-2) Bibliography file does not exist 
+- Misc (11/10)
+	- (-1) Repository name not "stat297hw1"
+	- (-2) No theme cerulean and syntax highlighting tango
+	- (+2) Good use of branching
+	- (+2) Good use of informative commit messages 
+- Total (95/100) 
+
+
+GITHUB ID: khanimzul
+Nurlisa Muhamad Fadli, Iffah mohamad Saufi, Khadijah Hanim Zulhaimi, Shafiqah Azman
+- Title section (5/5)
+- Introduction (5/5)
+- Group Members (10/10)
+- R Markdown Syntax (15/15)
+- References (5/5)
+- Misc (10/10)
+	- (-1) There is no file called "ref.bib"
+	- (-2) No theme cerulean and syntax highlighting tango
+	- (+2) Good use of informative commit messages 
+	- (+1) Great video! 
+- Total (100/100) 
+
+
+GITHUB ID: sidharthagrawal
+Sidharth Agrawal, Kaiyi Wu, Eric Song, Kai Lyu 
+- Title section (5/5)
+- Introduction (5/5)
+- Group Members (10/10)
+- R Markdown Syntax (15/15)
+- References (5/5)
+- Misc (13/10)
+	- (-2) HTML not updated 
+	- (+2) Good use of informative commit messages 
+	- (+1) Great video! 
+- Total (100/100) 
+
+GITHUB ID: hancharik 
+Austin Gongora, Ian Willick, Ciara Virgo, Mark Hancharik
+- Title section (5/5)
+- Introduction (5/5)
+- Group Members (9/10)
+	- (-1) Connor's image is missing
+- R Markdown Syntax (12/15)
+	- (-1) Caching not explained  
+	- (-2) Syntax correct but blue text and more info not working 
+- References (5/5)
+- Misc (13/10)
+	- (+2) Really nice CSS styling 
+	- (+2) Good use of informative commit messages 
+	- (+1) Great video! 
+- Total (100/100) 
+
+
+GITHUB ID: jfr25
+- Title section (5/5)
+- Introduction (5/5)
+- Group Members (8/10)
+	- (-2) Some of your images are missing 
+- R Markdown Syntax (14/15)
+	- (-1) Make sure you correct your merge conflicts 
+- References (5/5)
+- Misc (12/10)
+	- (+2) Good use of informative commit messages 
+- Total (99/100) 
+
+
+GITHUB ID: amw6022
+
+- Title section (5/5)
+- Introduction (3/5)
+	- (-2) Syntax correct but video not working in HTML (Path is absolute)
+- Group Members (6/10)
+	- (-2) Some of your images are missing 
+	- (-2) Henry's information is missing 
+- R Markdown Syntax (13/15)
+	- (-1) Caching example missing 
+	- (-1) More info does not do anything 
+- References (5/5)
+- Misc (10/10)
+	- (-1) Repository name not "stat297hw1"
+	- (-1) Henry's contributions?
+	- (+2) Good use of informative commit messages 
+- Total (92/100) 
