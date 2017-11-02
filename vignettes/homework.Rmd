@@ -84,6 +84,7 @@ Some additional info... :)
 
 5. A "References" section that contains all the references used in your document.
 
+
 # Homework 3
 
 
@@ -560,5 +561,3 @@ make_circle(radius = sqrt(sum((sat1 - pos)^2)), center = sat1, col = cols[1])
 ```
 
 Good luck! 
-
-
