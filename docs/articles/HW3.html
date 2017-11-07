@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Homework • stat297</title>
+<title>STAT 297: Homework 3 • stat297</title>
 <!-- jquery --><script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><!-- Font Awesome icons --><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 <!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
@@ -63,97 +63,13 @@
       </header><div class="row">
   <div class="col-md-9">
     <div class="page-header toc-ignore">
-      <h1>Homework</h1>
+      <h1>STAT 297: Homework 3</h1>
             
           </div>
 
     
     
 <div class="contents">
-<div id="homework-1" class="section level1">
-<h1 class="hasAnchor">
-<a href="#homework-1" class="anchor"></a>Homework 1</h1>
-<div class="alert alert-info">
-<p><strong>Important:</strong> To submit your homework share your GitHub repository with <strong>stephaneguerrier</strong> and <strong>munsheet</strong> by the deadline (i.e. 09/14/17 at 4PM). Do not modify your homework after the deadline. We will grade the most recent (~ 4PM) portion of your RMarkdown file.</p>
-</div>
-<p>The objectives of this homework assignment are the following</p>
-<ul>
-<li>Build your own RMarkdown document;</li>
-<li>Master different aspects of RMarkdown syntax;</li>
-<li>Become familiar with GitHub as collaborative tool.</li>
-</ul>
-<p>To start, create a (perferably private) GitHub repository for your group, and name it <strong>stat297hw1</strong>. Once again, make sure to add <strong>munsheet</strong> and <strong>stephaneguerrier</strong> as collaborators. This project <strong>must</strong> be done using GitHub and respect the following requirements:</p>
-<ul>
-<li>All members of the group must <code>commit</code> at least once.</li>
-<li>All commit messages must be reasonably <code>clear</code> and <code>meaningful</code>.<br>
-</li>
-<li>Your GitHub repository much include at least one <code>issue</code> containing some form of TO DO list.</li>
-</ul>
-<p>In your repository create a file called  providing an HTML output with the theme <code>cerulean</code> and syntax highlighting <code>tango</code>. This file should contain the following elements:</p>
-<ol style="list-style-type: decimal">
-<li>A “title” section which should <em>at least</em> include:
-<ul>
-<li>A title (e.g. Homework 1)</li>
-<li>The authors</li>
-<li>The date (think of using <code>Sys.time()</code>)</li>
-</ul>
-</li>
-<li><p>A section called “Introduction” where you provide a short summary of the structure of your homework. Moreover, record a short video to introduce your group and include it in your R Markdown document.</p></li>
-<li>
-<p>A section called “Group Members”. This sections should have one sub-section for each group member in your team. For example, a group with three members should have three biographies in total. Each of these sub-sections (named after each group member) should include small biographies containing <em>at least</em> the following elements:</p>
-<ul>
-<li>A picture of your choice (preferably of yourself). Make sure to include a caption for this image.</li>
-<li>A paragraph describing your favorite hobby as well as one interesting fact about yourself.</li>
-<li>Your favorite quote in blockquote format and be sure to reference your quote using BibTex.</li>
-<li>A table having two columns (first column containing the classes you are following this semester; second column containing the time of these classes).</li>
-</ul>
-</li>
-<li>
-<p>A section called “R Markdown Syntax”, where you will demonstrate your R Markdown skills! In this section make sure to:</p>
-<ul>
-<li>Show an example where the chunk option <code>cache = T</code> leads to a misleading answer. This example must be different from the one presented in the textbook.</li>
-<li>Simulate 100 random samples from a standard normal distribution using the function <code>rnorm()</code>. Store these 100 values in a vector called <code>x</code>. Then, compute the empirical median, mean and variance of <code>x</code>. Are these results different from 0, 0 and 1 (their respective theoretical values)? Is this result surprising? Justify your answer.</li>
-<li>Include a graph showing the histogram of <code>x</code> (make sure to include a caption to this figure), this can be done in R using the function <code>hist()</code>.</li>
-<li><p>Include the equation below: <span class="math display">\[
-\begin{aligned}
-     \mathbb{E} \left[ \text{var} \left\{
-                     \boldsymbol{v}_1\left(
-                       \hat{\boldsymbol{\theta}},n\right) \big|
-                     \hat{\boldsymbol{\theta}} \right\}  \right] 
-&amp;=
-                 \text{var} \left\{ \mathbf{v}_1\left(
-                     \boldsymbol{\theta}_0,n\right)  \right\}  +
-                 \mathbb{E} \left[\mathcal{O}_p\left\{
-{\bf D}_1(\boldsymbol{\theta}^*,n)(\hat{\boldsymbol{\theta}} - \boldsymbol{\theta}_{0}), 
-\dots,
-{\bf D}_p(\boldsymbol{\theta}^*,n)(\boldsymbol{\theta} - \boldsymbol{\theta}_{0})
-\right\}\right]\\
-    &amp;= \text{var} \left\{ \mathbf{v}_1\left( \boldsymbol{\theta}_0,n\right)  \right\}  + \mathcal{O}\left(n^{-2}\right).
-\end{aligned}
-\]</span></p></li>
-<li>Include the following <em>in-line</em> equation: <span class="math inline">\(\mathbf{A} \equiv \left[a_{i,j}\right]_{i,j = 1, \ldots, p}\)</span>.</li>
-<li>Include the following text in blue: <font color="blue">“Vérité dans un temps, erreur dans un autre.”, Charles de Montesquieu</font>
-</li>
-<li>Include a “More info” button with hide/unhide functionality such as:
-<button data-toggle="collapse" data-target="#demo">
-More info
-</button>
-<div id="demo" class="collapse">
-<p>Some additional info… :)</p>
-</div>
-</li>
-<li><p>Include a “color box” such as the one below:</p></li>
-</ul>
-<div class="alert alert-success">
-<p><strong>Some important Info:</strong> something</p>
-</div>
-</li>
-<li><p>A “References” section that contains all the references used in your document.</p></li>
-</ol>
-</div>
-<div id="homework-3" class="section level1">
-<h1 class="hasAnchor">
-<a href="#homework-3" class="anchor"></a>Homework 3</h1>
 <div class="alert alert-danger">
 <p><strong>Important:</strong> To submit your homework share your GitHub repository with <strong>stephaneguerrier</strong> and <strong>munsheet</strong> by the deadline, 4PM 11/15/2017. <strong>Do not modify your homework after the deadline</strong>. We will grade the version of your RMarkdown file that’s closest to 4PM 11/15/2017.</p>
 </div>
@@ -177,7 +93,7 @@ More info
 <a href="#problem-1-finding-pi" class="anchor"></a>Problem 1: Finding <span class="math inline">\(\pi\)</span>
 </h2>
 <p>In this exercise, we will consider a Monte-Carlo approach to find the value of <span class="math inline">\(\pi\)</span>. First, we consider the square below which has an area of 4. Second, we draw a unit circle inside of this square.</p>
-<p><img src="homework_files/figure-html/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;"></p>
+<p><img src="HW3_files/figure-html/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;"></p>
 <p>Since this circle has a unit radius, its area is simply <span class="math inline">\(\pi\)</span>. Remember that the area of a circle is <span class="math inline">\(\pi r^2\)</span> and in this case <span class="math inline">\(r=1\)</span>. A possible method estimate the area of this circle is the following. Let us consider <span class="math inline">\(B\)</span> points such that <span class="math inline">\(\mathbf{Z}_i = [X_i \;\; Y_i]^T \in \mathbb{R}^2, \; i = 1,..., B\)</span> denotes the coordinate of the <span class="math inline">\(i\)</span>-th point. Next, we assume that <span class="math inline">\(X_i \sim \mathcal{U}(-1,1)\)</span> (i.e. a uniform distribution between -1 and 1) and <span class="math inline">\(Y_i \sim \mathcal{U}(-1,1)\)</span>. Using these definitions we propose the following estimator of <span class="math inline">\(\pi\)</span>:</p>
 <p><span class="math display">\[
 \hat{\pi} = \text{area of the square } \times \frac{\text{number of points in circle}}{\text{total number of points}} = 4 \frac{\sum_{i = 1}^B \mathbb{I}(X_i^2 + Y_i^2 \leq 1)}{B},
@@ -240,7 +156,7 @@ f_{X,Y}(x,y) = f_X(x) f_Y(y) =  \left\{
 }</code></pre></div>
 <p>The function should output the area within the circle that was created, and in the case where <code>make_plot</code> is <code>TRUE</code> you should produce a graph that plots the box and the circle that was explained earlier. In addition, the <code>B</code> points should also be plotted accordingly, with two distinct colors for inside the circle and outside the circle. Below we have an example of calling this function.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">find_pi</span>(<span class="dt">make_plot =</span> <span class="ot">TRUE</span>)</code></pre></div>
-<p><img src="homework_files/figure-html/unnamed-chunk-4-1.png" width="480" style="display: block; margin: auto;"></p>
+<p><img src="HW3_files/figure-html/unnamed-chunk-4-1.png" width="480" style="display: block; margin: auto;"></p>
 <pre><code>## [1] 3.132</code></pre>
 <p>Here we run the same function, but plot more points as <code>B</code> to make a more closer estimate to <span class="math inline">\(\pi\)</span>.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">find_pi</span>(<span class="dt">B =</span> <span class="dv">10</span>^<span class="dv">8</span>, <span class="dt">make_plot =</span> <span class="ot">FALSE</span>)</code></pre></div>
@@ -253,7 +169,7 @@ f_{X,Y}(x,y) = f_X(x) f_Y(y) =  \left\{
 <p>Global Navigation Satellite Systems or GNSS are systems with global coverage that uses satellites to provide autonomous geo-spatial positioning. They allow small electronic receivers to determine their location (longitude, latitude, and altitude/elevation) to high precision (within a few meters) using time signals (i.e. “distances” informally speaking) transmitted along a line of sight by radio from satellites. Currently, there exist only three global operational GNSS, the United States’ Global Positioning System (GPS), Russia’s GLONASS and the European Union’s Galileo. However, China is in the process of expanding its regional BeiDou Navigation Satellite System into a global system by 2020. Other countries, such as India, France or Japan are in the process of developing regional and global systems.</p>
 <p>Obviously, GNSS are very complex systems and in this exercise we will consider an <strong>extremely simplified</strong> setting to illustrate the basic concepts behind satellite positioning. If you are interested in learning more about GNSS, an excellent introduction to get started this topics can be found here: “<a href="http://www.borealisprecision.com/pdf/An_Introduction_to_GNSS.pdf">An Introduction to GNSS</a>”.</p>
 <p>For simplicity, let us start by assuming that the earth is a motionless perfect circle in a two-dimensional space. Next, we assume that three motionless GNSS-like satellites are placed around the earth. The position of these satellites is assumed to be known and we will assume that there are synchronized (i.e. they all have the same “time”). Our simplified setting can be represented as follows:</p>
-<p><img src="homework_files/figure-html/unnamed-chunk-7-1.png" width="576" style="display: block; margin: auto;"></p>
+<p><img src="HW3_files/figure-html/unnamed-chunk-7-1.png" width="576" style="display: block; margin: auto;"></p>
 <p>Now, suppose that you are somewhere on our flat earth with a GNSS-like receiver. The way you will be able to compute your position with such system is by first determining the distance (or a closely related notion) between yourself and with each satellite. The computation of these distances is done by comparing the time at which a signal is emitted by a satellite and the time at which it is received by your device. More precisely, let <span class="math inline">\(t_e^{(i)}\)</span> and <span class="math inline">\(t_r^{(i)}\)</span> denote, respectively, the times at which a signal is emitted and received for satellite <span class="math inline">\(i\)</span>. To simplify further, in our problem we will assume that <span class="math inline">\(t_e^{(i)}\)</span> is known as the clock in each satellite is assumed to be “perfect”. However, the clock in our device is not perfect and <span class="math inline">\(t_r^{(i)}\)</span> is estimated by <span class="math inline">\(\hat{t}_r^{(i)}\)</span> which represents the time recorded by your receiver. Since all satellites are assumed to be synchronized by can write</p>
 <span class="math display">\[\begin{equation}
 \hat{t}_r^{(i)} = t_r^{(i)} + \Delta t.
@@ -263,7 +179,7 @@ f_{X,Y}(x,y) = f_X(x) f_Y(y) =  \left\{
 \hat{d}_i = c\left[(t_r^{(i)} + \Delta t) - t_e^{(i)}\right] = \underbrace{c\left(t_r^{(i)}  - t_e^{(i)}\right)}_{d_i} + \underbrace{c \Delta t}_{\varepsilon} = d_i + \varepsilon,
 \]</span></p>
 <p>where <span class="math inline">\(c\)</span>, <span class="math inline">\(d_i\)</span> and <span class="math inline">\(\varepsilon\)</span> denote, respectively, the speed of the signal, the true distance between us and the <span class="math inline">\(i\)</span>-th satellite, and the measurement error. Therefore, our setting can be represented as</p>
-<p><img src="homework_files/figure-html/unnamed-chunk-8-1.png" width="576" style="display: block; margin: auto;"></p>
+<p><img src="HW3_files/figure-html/unnamed-chunk-8-1.png" width="576" style="display: block; margin: auto;"></p>
 <p>Next, we let <span class="math inline">\((x_i, y_i), \, i = 1,2,3\)</span> denote the position of satellite <span class="math inline">\(i\)</span>. These coordinates of these points are given in the table below:</p>
 <center>
 <table style="width:68%;" class="table">
@@ -332,7 +248,7 @@ d_i = \sqrt{\left(x_i - x_0\right)^2 + \left(y_i - y_0\right)^2}.
 ## X = 99.9958
 ## Y = 100.003</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(position)</code></pre></div>
-<p><img src="homework_files/figure-html/unnamed-chunk-10-1.png" width="576" style="display: block; margin: auto;"></p>
+<p><img src="HW3_files/figure-html/unnamed-chunk-10-1.png" width="576" style="display: block; margin: auto;"></p>
 <p>Moreover, if your function is given a matrix as input you should be able to produce the following result: (notice this is a smiley face!)</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">dist_mat</code></pre></div>
 <pre><code>##           [,1]     [,2]     [,3]
@@ -348,9 +264,8 @@ d_i = \sqrt{\left(x_i - x_0\right)^2 + \left(y_i - y_0\right)^2}.
 ## [10,] 429.4120 541.5583 250.9528</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">position =<span class="st"> </span><span class="kw">get_position</span>(dist_mat)
 <span class="kw">plot</span>(position)</code></pre></div>
-<p><img src="homework_files/figure-html/unnamed-chunk-13-1.png" width="576" style="display: block; margin: auto;"></p>
+<p><img src="HW3_files/figure-html/unnamed-chunk-13-1.png" width="576" style="display: block; margin: auto;"></p>
 <p>Good luck!</p>
-</div>
 </div>
 </div>
   </div>
@@ -360,13 +275,8 @@ d_i = \sqrt{\left(x_i - x_0\right)^2 + \left(y_i - y_0\right)^2}.
       <h2 class="hasAnchor">
 <a href="#tocnav" class="anchor"></a>Contents</h2>
       <ul class="nav nav-pills nav-stacked">
-<li><a href="#homework-1">Homework 1</a></li>
-      <li>
-<a href="#homework-3">Homework 3</a><ul class="nav nav-pills nav-stacked">
 <li><a href="#problem-1-finding-pi">Problem 1: Finding <span class="math inline">\(\pi\)</span></a></li>
       <li><a href="#problem-2-satellite-navigation-system">Problem 2: Satellite Navigation System</a></li>
-      </ul>
-</li>
       </ul>
 </div>
       </div>
