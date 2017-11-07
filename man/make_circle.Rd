@@ -28,6 +28,9 @@ circle unfilled.}
 the border of the circle (default: \code{lty = 1}). See \code{?par} for
 more details.}
 }
+\description{
+Plotting a circle
+}
 \examples{
 # Example 1
 plot(NA, xlim = c(-1.1,1.1), ylim = c(-1.1,1.1), xlab = "x", ylab = "y")

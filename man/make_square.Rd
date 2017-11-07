@@ -25,6 +25,9 @@ circle unfilled.}
 the border of the square (default: \code{lty = 1}). See \code{?par} for
 more details.}
 }
+\description{
+Plotting a square
+}
 \examples{
 cols = hcl(h = seq(15, 375, length = 4), l = 65, c = 100)[1:3]
 cols_trans = hcl(h = seq(15, 375, length = 4), l = 65, c = 100, alpha = 0.15)[1:3]

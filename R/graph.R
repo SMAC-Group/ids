@@ -1,5 +1,5 @@
 #' @title Plotting a circle
-#'
+#' @description Plotting a circle
 #' @param center A \code{vector} of dimension 2 used to denote the center
 #' of the circle (default: \code{center = c(0,0)}).
 #' @param radius A \code{numeric} (positive) value used to indicate the radius of the
@@ -73,7 +73,7 @@ make_circle = function(center = c(0,0), radius = 1,
 
 
 #' @title Plotting a square
-#'
+#' @description Plotting a square
 #' @param center A \code{vector} of dimension 2 used to denote the center
 #' of the square (default: \code{center = c(0,0)}).
 #' @param side A \code{numeric} (positive) value used to indicate the length of one
