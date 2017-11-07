@@ -63,6 +63,31 @@ mc_int = function(x_range, fun, B, seed = 1291){
   var_I_hat = (interval_length*I2_hat - I_hat^2)/B
 
   # Output list
-  out = list(I = I_hat, var = var_I_hat)
+  out = list(I = I_hat, var = var_I_hat,
+             fun = fun, x_range = x_range, B = B)
+  class(out) = "MCI"
   out
+}
+
+plot.MCI = function(obj){
+  x_range = obj$x_range
+  fun = obj$fun
+
+  Delta = diff(x_range)
+  x_range_graph = c(x_range[2] - 1.15*Delta, x_range[1] + 1.15*Delta)
+  x = seq(from = x_range_graph[1], to = x_range_graph[2], length.out = 10^3)
+  f_x = eval(parse(text = fun))
+  plot(NA, xlim = range(x), ylim = range(f_x), xlab = "x", ylab = "f(x)")
+  grid()
+  title(paste("Estimated integral: ", round(obj$I,4),
+              " (", round(sqrt(obj$var),4),
+        ")", sep = ""))
+  lines(x, f_x)
+  x = seq(from = x_range[1], to = x_range[2], length.out = 10^3)
+  f_x = eval(parse(text = fun))
+  cols = hcl(h = seq(15, 375, length = 3), l = 65, c = 100, alpha = 0.4)[1:3]
+  polygon(c(x, rev(x)), c(rep(0, length(x)), rev(f_x)),
+          border = NA, col = cols[1])
+  abline(v = x_range[1], lty = 2)
+  abline(v = x_range[2], lty = 2)
 }
