@@ -69,6 +69,7 @@ mc_int = function(x_range, fun, B, seed = 1291){
   out
 }
 
+#' @export
 plot.MCI = function(obj){
   x_range = obj$x_range
   fun = obj$fun
