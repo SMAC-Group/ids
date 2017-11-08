@@ -1,8 +1,11 @@
 base
-methods
-datasets
-utils
-grDevices
-graphics
-stats
 plot3D
+maps
+ggplot2
+ggmap
+xml2
+rvest
+zoo
+xts
+TTR
+quantmod
