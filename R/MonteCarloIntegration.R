@@ -70,9 +70,9 @@ mc_int = function(x_range, fun, B, seed = 1291){
 }
 
 #' @export
-plot.MCI = function(x, ...){
-  x_range = x$x_range
-  fun = x$fun
+plot.MCI = function(obj, ...){
+  x_range = obj$x_range
+  fun = obj$fun
 
   Delta = diff(x_range)
   x_range_graph = c(x_range[2] - 1.15*Delta, x_range[1] + 1.15*Delta)
@@ -80,8 +80,8 @@ plot.MCI = function(x, ...){
   f_x = eval(parse(text = fun))
   plot(NA, xlim = range(x), ylim = range(f_x), xlab = "x", ylab = "f(x)")
   grid()
-  title(paste("Estimated integral: ", round(x$I,4),
-              " (", round(sqrt(x$var),4),
+  title(paste("Estimated integral: ", round(obj$I,4),
+              " (", round(sqrt(obj$var),4),
         ")", sep = ""))
   lines(x, f_x)
   x = seq(from = x_range[1], to = x_range[2], length.out = 10^3)
