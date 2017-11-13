@@ -351,7 +351,7 @@ stocks_tickers
 
 
 <div class="alert alert-info">
-  <strong>Important:</strong> To submit your homework share your GitHub repository with **stephaneguerrier** and **munsheet** by the deadline, 4PM 11/15/2017.  **Do not modify your homework after the deadline**. We will grade the version of your RMarkdown file that's closest to 4PM 11/15/2017.
+  <strong>Important:</strong> To submit your homework share your GitHub repository with **stephaneguerrier** and **munsheet** by the deadline, 4PM 11/17/2017.  **Do not modify your homework after the deadline**. We will grade the version of your RMarkdown file that's closest to 4PM 11/17/2017.
 </div>
 
 
