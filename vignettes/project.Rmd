@@ -9,50 +9,13 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-# Project
+# Project 
 
 Your semester project is meant to showcase what you have learned in this class. You should choose a topic that you find interesting but that is also reasonable to complete within the scope of the class. Each project must respect the following criteria:
 
 1) Propose a new statistical/visualization tool for an application you are interested in. 
 2) Involve a significant amount for programming done by all members of the group.
 3) Have fun doing it.
-
-The output of your project will be:
-
-1) An awesome project!
-2) A well documented GitHub repository (see e.g. https://github.com/SMAC-Group/ds) which should be called **groupX_project** where **X** is your group number.
-3) A website showcasing your work (think of adding a video) used as a github page (see e.g. https://smac-group.github.io/stat297/)
-4) An R package that be installed directly from GitHub (such as the `stat297` package which can be installed as `devtools::install_github("SMAC-Group/stat297")`). More specifically this package should have:
-    - TO DO
-    - A shiny app to allow someone having absolutely no R knowledge to "use" what you have done in your project. This shiny app should include in your package.
-
-## Schedule
- 
- 
-Presentation will take place on the 12/07, final deadline 12/10 at 11:59PM. Order will be:
-
-- Group 1: James Weaver, Addison Hayes, Jae Yun Jeong
-- Group 2: Zihan Zhang, Thomas Martin and Xinjiu Zhou
-- Group 3: Ryan Voyack, Marshall Malino and Jiaan Wan
-- Group 4: Aaron Wilhelm, Dylan Shoemaker, Darragh Caruso, and Tara Peng
-- Group 5: Nurlisa Muhamad Fadli, Iffah mohamad Saufi, Khadijah Hanim Zulhaimi, Shafiqah Azman
-- Group 6: Sidharth Agrawal, Kaiyi Wu, Eric Song, Kai Lyu
-- Group 7: Austin Gongora, Ian Willick, Ciara Virgo, Mark Hancharik
-- Group 8: Jaclyn Rothenberg, Angela Ting, Conner Shoop, and Ryan Faris
-
-All presention should be sent by 12/06 11:59PM! to both stephane@psu.edu and justinlee@psu.edu
-
-prensetion should last between 6 and 8 minutes. Everyone must be present on that day and you will asked to evaluate the other groups.
-
-## Grading crieteria
-
-- Overall quality (peer evaluation + instuctors)
-- Interest of the project (peer evaluation + instuctors)
-- Presentation (peer evaluation + instuctors)
-- Shiny app (peer evaluation + instuctors)
-- Complexity of the project (instuctors)
-- Documentation (instuctors)
-- R package (instuctors)
 
 ## Project Proposal 
 
@@ -63,3 +26,45 @@ To make sure that your project is suitable we will organize a project proposal p
 2) **Idea**: What is your idea for addressing the problem or topic? Why is it original relative to prior work? Where did the idea come from?
 
 3) **Feasibility**: Is this project able to be completed before the end of the semester? What steps must occur to complete the project before the end of the semester?
+
+## Project Output
+
+The output of your project will be:
+
+1) An awesome project!
+2) A well documented GitHub repository (see e.g. https://github.com/SMAC-Group/ds) which should be called **groupX_project** where **X** is your group number.
+3) A website showcasing your work (think of adding a video) used as a github page (see e.g. https://smac-group.github.io/stat297/)
+4) An R package that be installed directly from GitHub (such as the `stat297` package which can be installed as `devtools::install_github("SMAC-Group/stat297")`). More specifically this package should have:
+    - A DESCRIPTION file with all necessary information including, but not limited to, Package title, general description, dependencies, license, and imports. 
+    - R Functions with documentation including title, description, parameters, authors, exports, and at least one example. 
+    - A well formatted package skeleton (man, inst, docs, R, etc.)
+    - A shiny app to allow someone having absolutely no R knowledge to "use" what you have done in your project.
+    - This package should work. This means that the instructors should be able to call all necessary (intended) functions with `yourpackage::yourfunction`. Please visit office hours beforehand if you have any problems with building your package. 
+
+## Schedule
+ 
+Presentations will take place in **12/07**, and the final deadline for the GitHub repository including the package, presentation files, and website will be 12/10 at 11:59PM. The order of the presentations will be the following:
+
+- Group 1: James Weaver, Addison Hayes, Jae Yun Jeong
+- Group 2: Zihan Zhang, Thomas Martin and Xinjiu Zhou
+- Group 3: Ryan Voyack, Marshall Malino and Jiaan Wan
+- Group 4: Aaron Wilhelm, Dylan Shoemaker, Darragh Caruso, and Tara Peng
+- Group 5: Nurlisa Muhamad Fadli, Iffah mohamad Saufi, Khadijah Hanim Zulhaimi, Shafiqah Azman
+- Group 6: Sidharth Agrawal, Kaiyi Wu, Eric Song, Kai Lyu
+- Group 7: Austin Gongora, Ian Willick, Ciara Virgo, Mark Hancharik
+- Group 8: Jaclyn Rothenberg, Angela Ting, Conner Shoop, and Ryan Faris
+
+All presentions should be sent by 12/06 11:59PM! to both *stephane@psu.edu* and *justinlee@psu.edu*. The presentation should last between 6-8 minutes. Everyone in your groups must be present on that day and you will asked to evaluate other groups.
+
+## Grading crieteria
+
+The grading scheme of your final project will include these elements. 
+
+- Overall quality (peer evaluation + instuctors)
+- Interest of the project (peer evaluation + instuctors)
+- Presentation (peer evaluation + instuctors)
+- Shiny app (peer evaluation + instuctors)
+- Complexity of the project (instuctors)
+- Documentation (instuctors)
+- R package (instuctors)
+- GitHub Repository (instructors)

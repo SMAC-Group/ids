@@ -24,7 +24,7 @@ ui <- fluidPage(
         numericInput("up", "Integral upper bound:", 1, min = -100, max = 100),
         numericInput("B", "Number of Monte-Carlo replications:", 10^5,
                      min = 100, max = 10^9),
-        actionButton("button", "Compute Integral")
+        actionButton("button", "Find Integral")
       ),
 
       # Show a plot of the generated distribution

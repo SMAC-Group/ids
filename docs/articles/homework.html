@@ -190,8 +190,8 @@ More info
 big10 =<span class="st"> </span><span class="kw">read_html</span>(<span class="st">"http://www.bigten.org/library/stats/fb-confsked.html#standings"</span>)
 
 <span class="co"># Get uni names</span>
-big10 %&gt;%<span class="st"> </span>
-<span class="st">    </span><span class="kw">html_nodes</span>(<span class="st">".b1gfbstats:nth-child(9) td:nth-child(1) , .b1gfbstats:nth-child(6) td:nth-child(1)"</span>) %&gt;%<span class="st"> </span>
+big10 <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">html_nodes</span>(<span class="st">".b1gfbstats:nth-child(9) td:nth-child(1) , .b1gfbstats:nth-child(6) td:nth-child(1)"</span>) <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="st">    </span><span class="kw">html_text</span>() -&gt;<span class="st"> </span>uni_name
 uni_name =<span class="st"> </span><span class="kw">paste</span>(uni_name,<span class="st">"University"</span>)
 
@@ -199,13 +199,13 @@ uni_name =<span class="st"> </span><span class="kw">paste</span>(uni_name,<span 
 uni_coord =<span class="st"> </span><span class="kw">data.frame</span>(<span class="kw">geocode</span>(uni_name))
 
 <span class="co"># Get win rate</span>
-big10 %&gt;%<span class="st"> </span>
-<span class="st">    </span><span class="kw">html_nodes</span>(<span class="st">"td:nth-child(7)"</span>) %&gt;%
+big10 <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">    </span><span class="kw">html_nodes</span>(<span class="st">"td:nth-child(7)"</span>) <span class="op">%&gt;%</span>
 <span class="st">    </span><span class="kw">html_text</span>() -&gt;<span class="st"> </span>uni_wp
-uni_coord$wp =<span class="st"> </span><span class="dv">100</span>*<span class="kw">as.numeric</span>(uni_wp[<span class="dv">1</span>:<span class="kw">length</span>(uni_name)])
+uni_coord<span class="op">$</span>wp =<span class="st"> </span><span class="dv">100</span><span class="op">*</span><span class="kw">as.numeric</span>(uni_wp[<span class="dv">1</span><span class="op">:</span><span class="kw">length</span>(uni_name)])
 
 <span class="co"># Get division</span>
-uni_coord$conf =<span class="st"> </span><span class="kw">rep</span>(<span class="kw">c</span>(<span class="st">"East Division"</span>,<span class="st">"West Division"</span>), <span class="dt">each =</span> <span class="kw">length</span>(uni_name)/<span class="dv">2</span>)</code></pre></div>
+uni_coord<span class="op">$</span>conf =<span class="st"> </span><span class="kw">rep</span>(<span class="kw">c</span>(<span class="st">"East Division"</span>,<span class="st">"West Division"</span>), <span class="dt">each =</span> <span class="kw">length</span>(uni_name)<span class="op">/</span><span class="dv">2</span>)</code></pre></div>
 <p><strong>Problem 3: 3D-random walks</strong></p>
 <p>In this problem you will program a three-dimensional random walk. For this purpose we will consider a three-dimensional space where we let <span class="math inline">\(\mathbf{X}_0 = [0 \;\; 0\;\; 0]^T\)</span> denote the starting point of our process. Suppose that there exist a sequence of random variables <span class="math inline">\(U_1, \cdots, U_B\)</span> such <span class="math inline">\(U_t \stackrel{iid}{\sim} \mathcal{U}(0,1)\)</span>. Then, we let the position at time <span class="math inline">\(t\)</span> (where <span class="math inline">\(1 \leq t \leq B\)</span>) be given by</p>
 <p><span class="math display">\[
@@ -262,7 +262,7 @@ uni_coord$conf =<span class="st"> </span><span class="kw">rep</span>(<span class
 <li>
 <strong>(a)</strong> Using the same idea, simulate a three-dimensional random walk with <span class="math inline">\(B = 10^4\)</span>, <span class="math inline">\(a_i = \frac{i}{6}\)</span> and with <span class="math inline">\(U_t\)</span> being obtained as follows</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">B &lt;-<span class="st"> </span><span class="dv">10</span>^<span class="dv">4</span>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">B &lt;-<span class="st"> </span><span class="dv">10</span><span class="op">^</span><span class="dv">4</span>
 <span class="kw">set.seed</span>(<span class="dv">1982</span>)
 Ut &lt;-<span class="st"> </span><span class="kw">runif</span>(B)
 <span class="kw">head</span>(Ut)</code></pre></div>
@@ -283,7 +283,7 @@ X_B = \left[\begin{matrix}
 <li>
 <strong>(b)</strong> Repeat what you have in part <strong>(a)</strong> but with <span class="math inline">\(B = 10^5\)</span>, <span class="math inline">\(a_i = 0.99 \frac{i}{6}\)</span> and with <span class="math inline">\(U_t\)</span> being obtained as follows</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">B &lt;-<span class="st"> </span><span class="dv">10</span>^<span class="dv">5</span>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">B &lt;-<span class="st"> </span><span class="dv">10</span><span class="op">^</span><span class="dv">5</span>
 <span class="kw">set.seed</span>(<span class="dv">2000</span>)
 Ut &lt;-<span class="st"> </span><span class="kw">runif</span>(B)
 <span class="kw">head</span>(Ut)</code></pre></div>
@@ -335,13 +335,13 @@ X_B = \left[\begin{matrix}
 <span class="kw">library</span>(rvest)
 sp500 &lt;-<span class="st"> </span><span class="kw">read_html</span>(<span class="st">"https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"</span>)
 
-sp500 %&gt;%<span class="st"> </span>
-<span class="kw">html_nodes</span>(<span class="st">".text"</span>) %&gt;%<span class="st"> </span>
+sp500 <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="kw">html_nodes</span>(<span class="st">".text"</span>) <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="kw">html_text</span>() -&gt;<span class="st"> </span>ticker_sp500
 
-SP500_symbol &lt;-<span class="st"> </span>ticker_sp500[(<span class="dv">1</span>:<span class="dv">499</span>)*<span class="dv">2+1</span>]
-SP500_symbol[SP500_symbol ==<span class="st"> "BRK.B"</span>] &lt;-<span class="st"> "BRK-B"</span>
-SP500_symbol[SP500_symbol ==<span class="st"> "BF.B"</span>] &lt;-<span class="st"> "BF-B"</span></code></pre></div>
+SP500_symbol &lt;-<span class="st"> </span>ticker_sp500[(<span class="dv">1</span><span class="op">:</span><span class="dv">499</span>)<span class="op">*</span><span class="dv">2</span><span class="op">+</span><span class="dv">1</span>]
+SP500_symbol[SP500_symbol <span class="op">==</span><span class="st"> "BRK.B"</span>] &lt;-<span class="st"> "BRK-B"</span>
+SP500_symbol[SP500_symbol <span class="op">==</span><span class="st"> "BF.B"</span>] &lt;-<span class="st"> "BF-B"</span></code></pre></div>
 <p>He also mentioned that the function <code>get()</code> could be useful for this project and provides you with the example below:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(quantmod)
 today &lt;-<span class="st"> </span><span class="kw">Sys.Date</span>()
@@ -353,7 +353,7 @@ stocks_tickers &lt;-<span class="st"> </span><span class="kw">c</span>(<span cla
 var_stocks &lt;-<span class="st"> </span><span class="kw">rep</span>(<span class="ot">NA</span>, nb_ticker)
 <span class="kw">names</span>(var_stocks) &lt;-<span class="st"> </span>stocks_tickers
 
-for (i in <span class="dv">1</span>:nb_ticker){
+<span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>nb_ticker){
 Xt =<span class="st"> </span><span class="kw">na.omit</span>(<span class="kw">ClCl</span>(<span class="kw">get</span>(stocks_tickers[i])))
 stocks_tickers[i] =<span class="st"> </span><span class="kw">var</span>(Xt)
 }
@@ -433,12 +433,12 @@ f_{X,Y}(x,y) = f_X(x) f_Y(y) =  \left\{
 <code>make_plot</code>: a Boolean value to control whether or not a graph should be made (see below for details and use TRUE as default).</li>
 </ul>
 <p>Your function should look like:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">find_pi =<span class="st"> </span>function(<span class="dt">B =</span> <span class="dv">5000</span>, <span class="dt">seed =</span> <span class="dv">10</span>, <span class="dt">make_plot =</span> <span class="ot">TRUE</span>){
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">find_pi =<span class="st"> </span><span class="cf">function</span>(<span class="dt">B =</span> <span class="dv">5000</span>, <span class="dt">seed =</span> <span class="dv">10</span>, <span class="dt">make_plot =</span> <span class="ot">TRUE</span>){
   <span class="co"># Control seed</span>
   <span class="kw">set.seed</span>(seed)
   
   <span class="co"># Simulate B points</span>
-  point =<span class="st"> </span><span class="kw">matrix</span>(<span class="kw">runif</span>(<span class="dv">2</span>*B, -<span class="dv">1</span>, <span class="dv">1</span>), B, <span class="dv">2</span>)
+  point =<span class="st"> </span><span class="kw">matrix</span>(<span class="kw">runif</span>(<span class="dv">2</span><span class="op">*</span>B, <span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>), B, <span class="dv">2</span>)
   
  ...
  
@@ -449,7 +449,7 @@ f_{X,Y}(x,y) = f_X(x) f_Y(y) =  \left\{
 <p><img src="homework_files/figure-html/unnamed-chunk-12-1.png" width="480" style="display: block; margin: auto;"></p>
 <pre><code>## [1] 3.132</code></pre>
 <p>Here we run the same function, but plot more points as <code>B</code> to make a more closer estimate to <span class="math inline">\(\pi\)</span>.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">find_pi</span>(<span class="dt">B =</span> <span class="dv">10</span>^<span class="dv">8</span>, <span class="dt">make_plot =</span> <span class="ot">FALSE</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">find_pi</span>(<span class="dt">B =</span> <span class="dv">10</span><span class="op">^</span><span class="dv">8</span>, <span class="dt">make_plot =</span> <span class="ot">FALSE</span>)</code></pre></div>
 <pre><code>## [1] 3.141747</code></pre>
 <p>Should return the value of 3.141747, which is a fairly good approximation of <span class="math inline">\(\pi\)</span>. Since you will be use the same seed you should obtain the exact same result.</p>
 <p><strong>Problem 2: Satellite Navigation System</strong></p>
@@ -559,7 +559,8 @@ d_i = \sqrt{\left(x_i - x_0\right)^2 + \left(y_i - y_0\right)^2}.
 
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
         <div id="tocnav">
-      <h2>Contents</h2>
+      <h2 class="hasAnchor">
+<a href="#tocnav" class="anchor"></a>Contents</h2>
       <ul class="nav nav-pills nav-stacked">
 <li><a href="#homework-1">Homework 1</a></li>
       <li><a href="#homework-2">Homework 2</a></li>
