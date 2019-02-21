@@ -18,6 +18,7 @@ Depends: R (>= 3.1.0),
          knitr,
          rmarkdown,
          stats
+Remotes: hadley/emo
 License: CC BY-NC-SA 4.0
 RoxygenNote: 6.0.1
 VignetteBuilder: utils

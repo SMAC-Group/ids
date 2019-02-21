@@ -14,6 +14,9 @@ ui <- shinyUI(
         checkboxInput("link", label = "Links", value = FALSE),
         checkboxInput("pic", label = "Pictures", value = FALSE),
         checkboxInput("code", label = "Code", value = FALSE),
+        checkboxInput("emo", label = "Emoji", value = FALSE),
+        checkboxInput("gif", label = "Giphy", value = FALSE),
+        checkboxInput("video", label = "Video", value = FALSE),
         checkboxInput("plot", label = "Plot", value = FALSE),
 
         conditionalPanel(

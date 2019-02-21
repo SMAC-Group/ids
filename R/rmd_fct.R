@@ -136,6 +136,27 @@ make_files = function(input, rmd = FALSE){
     cat("> Use the > character in front of a line, *just like in email*.\n> Use it if you're quoting a person, a song or whatever.\n >>Add the >> if you want to quote within a quote.\n\n")
   }
 
+
+  if(input$emo){
+    cat("Here are some nice emoji: `r emo::ji('cold_sweat')` `r emo::ji('flushed')` `r emo::ji('scream')`\n\n")
+  }
+
+
+  if(input$gif){
+    cat("Here is a big Giphy: \n\n")
+    cat("![Some useful legend](https://media.giphy.com/media/3o7TKSha51ATTx9KzC/giphy.gif) \n\n")
+    cat("and a smaller one... <img src='https://media.giphy.com/media/5nkIn9AEfUQ6JtXL43/giphy.gif' width='200' height='200' />\n")
+  }
+
+
+  if(input$video){
+    cat("Here is a useful video: \n\n")
+    cat("<iframe width='560' height='315' src='https://www.youtube.com/embed/WpE_xMRiCLE' frameborder='0' allowfullscreen></iframe>\n\n")
+  }
+
+
+
+
   if(input$link){
     cat("**Links Full:** <https://google.com/>\n\n**Links Custom:** [RMarkdown Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)\n\n")
   }
