@@ -1,5 +1,5 @@
 #' Adapted from r-bloggers
-#' @title Run Shiny Applications for stat297
+#' @title Run Shiny Applications
 #' @description
 #' Use runShiny('rmd') to call rmd_full.
 #' Use runShiny('rmd_mini') to call rmd_min.
@@ -15,7 +15,7 @@
 #' @export
 runShiny = function(example){
   # locate all the shiny app examples that exist
-  validShiny = list.files(system.file("shiny-examples", package = "stat297"))
+  validShiny = list.files(system.file("shiny-examples", package = "ids"))
 
   # Prints out valid Shiny apps
   validShinyMsg =

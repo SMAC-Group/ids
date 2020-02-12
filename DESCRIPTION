@@ -24,5 +24,4 @@ Imports:
 RoxygenNote: 7.0.2
 Encoding: UTF-8
 VignetteBuilder: knitr
-License: AGPL-3 | file LICENSE
 
