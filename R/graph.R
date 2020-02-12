@@ -1,17 +1,17 @@
 #' @title Plotting a circle
-#' @description Plotting a circle
+#' @description This function plots a circle.
 #' @param center A \code{vector} of dimension 2 used to denote the center
 #' of the circle (default: \code{center = c(0,0)}).
-#' @param radius A \code{numeric} (positive) value used to indicate the radius of the
+#' @param radius A \code{numeric} (positive) value used to denote the radius of the
 #' circle (default: \code{raduis = 1}).
-#' @param nb_step A \code{numeric} value used the number of points used to
+#' @param nb_step A \code{numeric} value used to denote the number of points used to
 #' construct the circle (default: \code{nb_step = 300}).
 #' @param col A \code{numeric} or \code{string} used to denote the color of
-#'  the border of the circle (default: \code{col = "darkblue"})
-#' @param fill A \code{numeric} or \code{string} used to denote the number
-#' the color for filling the circle. The default, \code{NULL}, is to leave
+#'  the border of the circle (default: \code{col = "darkblue"}).
+#' @param fill A \code{numeric} or \code{string} used to denote
+#' the color to fill the circle. The default, \code{NULL}, is to leave
 #' circle unfilled.
-#' @param lty A \code{numeric} value used the denote the line type used for
+#' @param lty A \code{numeric} value used to denote the line type used for
 #' the border of the circle (default: \code{lty = 1}). See \code{?par} for
 #' more details.
 #' @author Stephane Guerrier
@@ -38,8 +38,7 @@
 #'             col = cols[2], fill = cols_trans[2], lty = 2)
 #' make_circle(radius = 414.3106, center = c(0, -300),
 #'             col = cols[3], fill = cols_trans[3], lty = 2)
-make_circle = function(center = c(0,0), radius = 1,
-                       nb_step = 300, col = "darkblue",
+make_circle = function(center = c(0,0), radius = 1, nb_step = 300, col = "darkblue",
                        fill = NULL, lty = 1){
   if (!(radius > 0) || is.na(radius) || is.null(radius)){
     stop("The parameter radius must be positive.")
@@ -73,17 +72,17 @@ make_circle = function(center = c(0,0), radius = 1,
 
 
 #' @title Plotting a square
-#' @description Plotting a square
+#' @description This function plots a square.
 #' @param center A \code{vector} of dimension 2 used to denote the center
 #' of the square (default: \code{center = c(0,0)}).
 #' @param side A \code{numeric} (positive) value used to indicate the length of one
 #' side of the square (default: \code{side = 2}).
 #' @param col A \code{numeric} or \code{string} used to denote the color of
-#'  the border of the square (default: \code{col = "darkblue"})
-#' @param fill A \code{numeric} or \code{string} used to denote the number
-#' the color for filling the square The default, \code{NULL}, is to leave
-#' circle unfilled.
-#' @param lty A \code{numeric} value used the denote the line type used for
+#'  the border of the square (default: \code{col = "darkblue"}).
+#' @param fill A \code{numeric} or \code{string} used to denote
+#' the color to fill the square. The default, \code{NULL}, is to leave
+#' square unfilled.
+#' @param lty A \code{numeric} value used to denote the line type used for
 #' the border of the square (default: \code{lty = 1}). See \code{?par} for
 #' more details.
 #' @author Stephane Guerrier

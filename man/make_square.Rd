@@ -14,18 +14,18 @@ of the square (default: \code{center = c(0,0)}).}
 side of the square (default: \code{side = 2}).}
 
 \item{col}{A \code{numeric} or \code{string} used to denote the color of
-the border of the square (default: \code{col = "darkblue"})}
+the border of the square (default: \code{col = "darkblue"}).}
 
-\item{fill}{A \code{numeric} or \code{string} used to denote the number
-the color for filling the square The default, \code{NULL}, is to leave
-circle unfilled.}
+\item{fill}{A \code{numeric} or \code{string} used to denote
+the color to fill the square. The default, \code{NULL}, is to leave
+square unfilled.}
 
-\item{lty}{A \code{numeric} value used the denote the line type used for
+\item{lty}{A \code{numeric} value used to denote the line type used for
 the border of the square (default: \code{lty = 1}). See \code{?par} for
 more details.}
 }
 \description{
-Plotting a square
+This function plots a square.
 }
 \examples{
 cols = hcl(h = seq(15, 375, length = 4), l = 65, c = 100)[1:3]

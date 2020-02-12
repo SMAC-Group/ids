@@ -17,25 +17,25 @@ make_circle(
 \item{center}{A \code{vector} of dimension 2 used to denote the center
 of the circle (default: \code{center = c(0,0)}).}
 
-\item{radius}{A \code{numeric} (positive) value used to indicate the radius of the
+\item{radius}{A \code{numeric} (positive) value used to denote the radius of the
 circle (default: \code{raduis = 1}).}
 
-\item{nb_step}{A \code{numeric} value used the number of points used to
+\item{nb_step}{A \code{numeric} value used to denote the number of points used to
 construct the circle (default: \code{nb_step = 300}).}
 
 \item{col}{A \code{numeric} or \code{string} used to denote the color of
-the border of the circle (default: \code{col = "darkblue"})}
+the border of the circle (default: \code{col = "darkblue"}).}
 
-\item{fill}{A \code{numeric} or \code{string} used to denote the number
-the color for filling the circle. The default, \code{NULL}, is to leave
+\item{fill}{A \code{numeric} or \code{string} used to denote
+the color to fill the circle. The default, \code{NULL}, is to leave
 circle unfilled.}
 
-\item{lty}{A \code{numeric} value used the denote the line type used for
+\item{lty}{A \code{numeric} value used to denote the line type used for
 the border of the circle (default: \code{lty = 1}). See \code{?par} for
 more details.}
 }
 \description{
-Plotting a circle
+This function plots a circle.
 }
 \examples{
 # Example 1

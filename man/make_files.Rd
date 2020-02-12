@@ -2,16 +2,16 @@
 % Please edit documentation in R/rmd_fct.R
 \name{make_files}
 \alias{make_files}
-\title{Internal function for RMarkdown app}
+\title{Generate RMarkdown file}
 \usage{
 make_files(input, rmd = FALSE)
 }
 \arguments{
-\item{input}{A \code{data frame} coming fronm shiny app.}
+\item{input}{A \code{data frame} coming from the shiny app.}
 
-\item{rmd}{A \code{boolean} to indicate if the output should be a rmd file or
+\item{rmd}{A \code{boolean} to indicate if the output should be a RMarkdown file or
 simply print output.}
 }
 \description{
-Create RMD file need for app or print content.
+This function generates RMarkdown file.
 }

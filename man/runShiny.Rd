@@ -2,29 +2,18 @@
 % Please edit documentation in R/runShiny.R
 \name{runShiny}
 \alias{runShiny}
-\title{Run Shiny Applications}
+\title{Run Shiny applications}
 \usage{
 runShiny(example)
 }
 \arguments{
-\item{example}{A \code{string} denoting the Shiny application name.
-Currently 'rmd' and 'rmd_mini' are available. Default is 'rmd'.}
+\item{example}{A \code{string} denoting the name of the Shiny application.}
 }
 \value{
-A running implementation
+A running implementation.
 }
 \description{
-Use runShiny('rmd') to call rmd_full.
-Use runShiny('rmd_mini') to call rmd_min.
-}
-\details{
-Adapted from r-bloggers
-}
-\examples{
-\dontrun{
-runShiny('rmd')
-runShiny('rmd_mini')
-}
+This function allows to run the Shiny applications.
 }
 \author{
 Justin Lee

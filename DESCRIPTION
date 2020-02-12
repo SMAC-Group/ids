@@ -15,6 +15,7 @@ Maintainer: Stéphane Guerrier <stef.guerrier@gmail.com>
 Description: A system contains easy-to-use tools as a support for the course entitled "Introduction to Data Science" given at University of Geneva.
 Depends: 
     R (>= 3.5.0)
+License: AGPL-3 | file LICENSE
 Imports: 
     shiny,
     devtools,
