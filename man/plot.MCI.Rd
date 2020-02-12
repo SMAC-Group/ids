@@ -8,6 +8,8 @@
 }
 \arguments{
 \item{x}{An object of class \code{MCI}.}
+
+\item{...}{Additional arguments passed to the function.}
 }
 \value{
 A plot containing the Monte-Carlo ingetration result.

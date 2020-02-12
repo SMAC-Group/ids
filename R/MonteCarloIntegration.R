@@ -46,7 +46,7 @@ mc_int = function(x_range, fun, B, seed = 1291){
 
   # Check B
   if (B < 1){
-    error("B is incorrectly specified")
+    stop("B is incorrectly specified")
   }
 
   # Set seed
@@ -79,6 +79,7 @@ mc_int = function(x_range, fun, B, seed = 1291){
 #' @description This function plots the Monte-Carlo ingetration result
 #' returned by the `mc_int` function.
 #' @param x An object of class \code{MCI}.
+#' @param ... Additional arguments passed to the function.
 #' @return A plot containing the Monte-Carlo ingetration result.
 #' @author Stephane Guerrier
 #' @export

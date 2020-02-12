@@ -1,0 +1,7 @@
+---
+title: 'RMarkdown Playground'
+output: html_document
+---
+
+Experiment with the Rmd Code below and test output.
+

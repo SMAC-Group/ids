@@ -48,7 +48,7 @@ make_circle = function(center = c(0,0), radius = 1, nb_step = 300, col = "darkbl
     stop("The parameter nb_step must be larger than 10.")
   }
 
-  if (!(length(center) == 2) || is.na(center) || is.null(center)){
+  if (!(length(center) == 2) || sum(is.na(center))!=0 || is.null(center)){
     stop("The parameter center must a vector of lenght 2.")
   }
 
@@ -104,7 +104,7 @@ make_square = function(center = c(0,0), side = 2, col = "darkblue",
     stop("The parameter side must be positive.")
   }
 
-  if (!(length(center) == 2) || is.na(center) || is.null(center)){
+  if (!(length(center) == 2) || sum(is.na(center))!=0 || is.null(center)){
     stop("The parameter center must a vector of lenght 2.")
   }
 
