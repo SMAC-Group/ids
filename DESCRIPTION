@@ -1,4 +1,4 @@
-Package: intro_ds
+Package: ids
 Type: Package
 Title: Introduction to Data Science
 Version: 0.1.0
