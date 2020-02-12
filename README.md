@@ -45,9 +45,6 @@ stable version of the package.
 # Install dependencies
 install.packages(c("devtools","knitr","rmarkdown"))
 
-# Install the package from GitHub without Vignettes/User Guides
+# Install the package from GitHub
 devtools::install_github("SMAC-Group/ids")
-
-# Install the package from GitHub with Vignettes/User Guides 
-devtools::install_github("SMAC-Group/ids", build_vignettes = TRUE)
 ```
