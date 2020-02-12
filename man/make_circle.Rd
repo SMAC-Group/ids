@@ -4,8 +4,14 @@
 \alias{make_circle}
 \title{Plotting a circle}
 \usage{
-make_circle(center = c(0, 0), radius = 1, nb_step = 300,
-  col = "darkblue", fill = NULL, lty = 1)
+make_circle(
+  center = c(0, 0),
+  radius = 1,
+  nb_step = 300,
+  col = "darkblue",
+  fill = NULL,
+  lty = 1
+)
 }
 \arguments{
 \item{center}{A \code{vector} of dimension 2 used to denote the center

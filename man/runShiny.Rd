@@ -2,7 +2,7 @@
 % Please edit documentation in R/runShiny.R
 \name{runShiny}
 \alias{runShiny}
-\title{Run Shiny Applications for stat297}
+\title{Run Shiny Applications}
 \usage{
 runShiny(example)
 }
