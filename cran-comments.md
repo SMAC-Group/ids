@@ -10,9 +10,7 @@
 
 ## R CMD check results
 
-There was 1 NOTE:
-
-* checking installed package size ... NOTE
+There was 0 errors, 0 warnings and 0 notes. 
 
 
 ## Downstream dependencies
