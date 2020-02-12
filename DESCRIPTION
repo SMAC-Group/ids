@@ -1,25 +1,28 @@
 Package: intro_ds
 Type: Package
 Title: Introduction to Data Science
-Version: 1.0
+Version: 0.1.0
 Date: 2020-02-12
 LazyData: true
 Authors@R: c(
     person("Stéphane", "Guerrier", email = "stef.guerrier@gmail.com", role = c("aut","cre","cph")),
     person("Justin", "Lee", role = "aut"),
     person("Roberto", "Molinari", role = "aut"),
-    person("Matthew", "Beckman", role = "aut")
+    person("Matthew", "Beckman", role = "aut"),
+    person("Yuming", "Zhang", role = "aut")
     )
 Maintainer: Stéphane Guerrier <stef.guerrier@gmail.com>
-Description: TO DO
-Depends: R (>= 3.5.0),
-         shiny,
-         devtools,
-         knitr,
-         rmarkdown,
-         stats
-Remotes: hadley/emo
-License: CC BY-NC-SA 4.0
-RoxygenNote: 6.0.1
-VignetteBuilder: utils
+Description: A system contains easy-to-use tools as a support for the course entitled "Introduction to Data Science" given at University of Geneva.
+Depends: 
+    R (>= 3.5.0)
+Imports: 
+    shiny,
+    devtools,
+    knitr,
+    rmarkdown,
+    stats
+RoxygenNote: 7.0.2
+Encoding: UTF-8
+VignetteBuilder: knitr
+License: AGPL-3 | file LICENSE
 
