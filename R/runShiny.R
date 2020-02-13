@@ -6,7 +6,7 @@
 #' @export
 runShiny = function(example){
   # locate all the shiny app examples that exist
-  validShiny = list.files(system.file("shiny-examples", package = "ids"))
+  validShiny = list.files(system.file("shiny-examples", package = "introDS"))
 
   # Prints out valid Shiny apps
   validShinyMsg =
