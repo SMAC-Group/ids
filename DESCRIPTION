@@ -24,5 +24,4 @@ Imports:
     stats
 RoxygenNote: 7.0.2
 Encoding: UTF-8
-VignetteBuilder: knitr
 
