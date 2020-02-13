@@ -14,14 +14,10 @@ knitr::opts_chunk$set(
 library(introDS)
 ```
 
-[![Travis-CI Build Status](https://travis-ci.org/SMAC-Group/stat297.svg?branch=master)](https://travis-ci.org/SMAC-Group/stat297)
+[![Travis-CI Build Status](https://travis-ci.org/SMAC-Group/introDS.svg?branch=master)](https://travis-ci.org/SMAC-Group/introDS)
 [![Project Status: Active](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
-[![Licence](https://img.shields.io/badge/licence-CC BY--NC--SA 4.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html) 
-[![minimal R version](https://img.shields.io/badge/R%3E%3D-3.4.0-6666ff.svg)](https://cran.r-project.org/)
-[![CRAN](http://www.r-pkg.org/badges/version/stat297)](https://cran.r-project.org/package=stat297)
-[![packageversion](https://img.shields.io/badge/Package%20version-0.1.0-orange.svg?style=flat-square)](commits/develop)
-[![Last-changedate](https://img.shields.io/badge/last%20change-`r gsub('-', '--', Sys.Date())`-yellowgreen.svg)](/commits/master)
-
+[![Licence](https://img.shields.io/badge/licence-AGPL--3.0-blue.svg)](https://opensource.org/licenses/AGPL-3.0)
+[![minimal R version](https://img.shields.io/badge/R%3E%3D-3.5.0-6666ff.svg)](https://cran.r-project.org/)
 
 
 # Introduction to Data Science
