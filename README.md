@@ -9,7 +9,7 @@ Active](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostat
 [![minimal R
 version](https://img.shields.io/badge/R%3E%3D-3.5.0-6666ff.svg)](https://cran.r-project.org/)
 
-# Introduction to Data Science 😎
+# Introduction to Data Science 😎 <a href="https://data-analytics-lab.net/"><img src="man/figures/logo.png" align="right" alt=" " width="230"></a>
 
 The objective of the `introDS` package is to provide a support for the
 course entitled “Introduction to Data Science” given at University of
