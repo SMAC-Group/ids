@@ -9,7 +9,7 @@ Active](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostat
 [![minimal R
 version](https://img.shields.io/badge/R%3E%3D-3.5.0-6666ff.svg)](https://cran.r-project.org/)
 
-# Introduction to Data Science
+# Introduction to Data Science 😎
 
 The objective of the `introDS` package is to provide a support for the
 course entitled “Introduction to Data Science” given at University of
@@ -23,21 +23,10 @@ as well as dynamic reports to visualize and analyze them. Students
 should also be able to construct their own R packages, make them
 available on GitHub and document them using literate programming.
 
-# Installation Instructions
+# Installation Instructions 💻
 
-The `introDS` package is available on both CRAN and GitHub. The CRAN
-version is considered stable while the GitHub version is subject to
-modifications/updates which may lead to installation problems or broken
-functions. You can install the stable version of the `introDS` package
-with:
-
-``` r
-install.packages("introDS")
-```
-
-For users who are interested in having the latest developments, the
-GitHub version is ideal although more dependencies are required to run a
-stable version of the package.
+The `introDS` package is currently only available on GitHub. This
+version can be installed as follows:
 
 ``` r
 # Install dependencies

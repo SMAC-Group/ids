@@ -2,13 +2,14 @@ Package: introDS
 Type: Package
 Title: Introduction to Data Science
 Version: 0.1.0
-Date: 2020-02-12
+Date: 2020-02-20
 LazyData: true
 Authors@R: c(
     person("Stéphane", "Guerrier", email = "stef.guerrier@gmail.com", role = c("aut","cre","cph")),
     person("Justin", "Lee", role = "aut"),
     person("Roberto", "Molinari", role = "aut"),
     person("Matthew", "Beckman", role = "aut"),
+    person("Lionel", "Voirol", role = "aut"),
     person("Yuming", "Zhang", role = "aut")
     )
 Maintainer: Stéphane Guerrier <stef.guerrier@gmail.com>
