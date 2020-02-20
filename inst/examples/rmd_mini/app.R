@@ -113,7 +113,7 @@ ui <- miniPage(
 server <- function(input, output) {
 
   output$raw <- shiny::renderPrint({
-    make_files(input, rmd = FALSE)
+    make_files(input, rmd = FALSE, mobile = TRUE)
   })
 
   output$bib <- shiny::renderPrint({
@@ -143,7 +143,7 @@ server <- function(input, output) {
   })
 
   output$html <- shiny::renderUI({
-    introDS::make_files(input, rmd = TRUE)
+    introDS::make_files(input, rmd = TRUE, mobile = TRUE)
     rmarkdown::render("test.Rmd")
     shiny::includeHTML("test.html")
   })
