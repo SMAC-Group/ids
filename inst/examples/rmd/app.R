@@ -1,4 +1,4 @@
-library(stat297)
+library(introDS)
 
 ui <- shinyUI(
   fluidPage(

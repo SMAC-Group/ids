@@ -1,4 +1,4 @@
-library(stat297)
+library(introDS)
 library(miniUI)
 
 ui <- miniPage(
