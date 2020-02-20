@@ -1,4 +1,6 @@
 library(introDS)
+library(shiny)
+library(rmarkdown)
 
 ui <- shinyUI(
   fluidPage(
