@@ -1,0 +1,10 @@
+name: rmd_app
+title:
+username:
+account: dal-unige
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1839572
+bundleId: 2815181
+url: https://dal-unige.shinyapps.io/rmd_app/
+when: 1582211753.51942

@@ -1,0 +1,10 @@
+name: myapp
+title:
+username:
+account: dal-unige
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1839529
+bundleId: 2815169
+url: https://dal-unige.shinyapps.io/myapp/
+when: 1582211586.80931

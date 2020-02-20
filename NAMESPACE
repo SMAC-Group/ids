@@ -2,6 +2,7 @@
 
 S3method(plot,MCI)
 export(make_circle)
+export(make_files)
 export(make_square)
 export(mc_int)
 export(runShiny)

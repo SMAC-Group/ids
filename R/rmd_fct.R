@@ -3,6 +3,7 @@
 #' @param input A \code{data frame} coming from the shiny app.
 #' @param rmd A \code{boolean} to indicate if the output should be a RMarkdown file or
 #' simply print output.
+#' @export
 make_files = function(input, rmd = FALSE){
   if (rmd){
     file.create("test.txt")
