@@ -4,7 +4,13 @@
 #' @return A running implementation.
 #' @author Justin Lee
 #' @export
-runShiny = function(example){
+#' @examples
+#' \dontrun{
+#' # Run RMarkdown app
+#' runShiny()
+#' }
+runShiny = function(example = "rmd"){
+
   # locate all the shiny app examples that exist
   validShiny = list.files(system.file("examples", package = "introDS"))
 
@@ -16,7 +22,7 @@ runShiny = function(example){
       "'")
 
   # if an invalid example is given, throw an error
-  if (missing(example) || !nzchar(example) ||
+  if (is.null(example) || !nzchar(example) ||
       !example %in% validShiny) {
     stop(
       'Please run `runShiny()` with a valid Shiny app as an argument.n',

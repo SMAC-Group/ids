@@ -112,11 +112,11 @@ ui <- miniPage(
 
 server <- function(input, output) {
 
-  output$raw <- renderPrint({
+  output$raw <- shiny::renderPrint({
     make_files(input, rmd = FALSE)
   })
 
-  output$bib <- renderPrint({
+  output$bib <- shiny::renderPrint({
     cat("@article{harrar2013taste,\n")
     cat("  title={The taste of cutlery: how the taste of food is affected by \n")
     cat("  the weight, size, shape, and colour of the cutlery used to eat it},\n")
@@ -142,11 +142,11 @@ server <- function(input, output) {
     cat("}\n")
   })
 
-  output$html <- renderUI({
-    make_files(input, rmd = TRUE)
-    render("test.Rmd")
-    includeHTML("test.html")
+  output$html <- shiny::renderUI({
+    introDS::make_files(input, rmd = TRUE)
+    rmarkdown::render("test.Rmd")
+    shiny::includeHTML("test.html")
   })
 }
 
-shinyApp(ui, server)
+shiny::shinyApp(ui, server)

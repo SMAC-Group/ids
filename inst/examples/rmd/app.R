@@ -98,7 +98,7 @@ ui <- shinyUI(
 server <- function(input, output) {
 
   output$raw <- renderPrint({
-    make_files(input, rmd = FALSE)
+    introDS::make_files(input, rmd = FALSE)
   })
 
   output$bib <- renderPrint({
@@ -128,9 +128,9 @@ server <- function(input, output) {
   })
 
   output$html <- renderUI({
-    make_files(input, rmd = TRUE)
-    render("test.Rmd")
-    includeHTML("test.html")
+    introDS::make_files(input, rmd = TRUE)
+    rmarkdown::render("test.Rmd")
+    shiny::includeHTML("test.html")
   })
 }
 

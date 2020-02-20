@@ -1,0 +1,29 @@
+title: introDS
+
+template:
+  bootswatch: flatly
+
+reference:
+- title: Graphical Tools
+  contents:
+  - make_circle
+  - make_square
+
+- title: Shiny apps
+  contents:
+  - runShiny
+
+- title: Other functions
+  contents:
+  - mc_int
+
+navbar:
+  type: default
+  left:
+  - text: Home
+    href: index.html
+  - text: Reference
+    href: reference/index.html
+  right:
+  - icon: fa-github fa-lg
+    href: https://github.com/SMAC-Group/introDS

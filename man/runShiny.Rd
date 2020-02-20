@@ -4,7 +4,7 @@
 \alias{runShiny}
 \title{Run Shiny applications}
 \usage{
-runShiny(example)
+runShiny(example = "rmd")
 }
 \arguments{
 \item{example}{A \code{string} denoting the name of the Shiny application.}
@@ -14,6 +14,12 @@ A running implementation.
 }
 \description{
 This function allows to run the Shiny applications.
+}
+\examples{
+\dontrun{
+# Run RMarkdown app
+runShiny()
+}
 }
 \author{
 Justin Lee

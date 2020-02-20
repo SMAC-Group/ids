@@ -3,8 +3,8 @@
 \docType{package}
 \name{introDS}
 \alias{introDS}
-\title{wv}
+\title{introDS}
 \description{
-wv
+introDS
 }
 \keyword{internal}

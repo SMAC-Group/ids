@@ -21,7 +21,9 @@ well as of reproducible research, result-sharing and version control
 automatically extract data from websites and create interactive web apps
 as well as dynamic reports to visualize and analyze them. Students
 should also be able to construct their own R packages, make them
-available on GitHub and document them using literate programming.
+available on GitHub and document them using literate programming. This
+package is linked to the ebook [An Introduction to Statistical
+Programming Methods with R](http://r.smac-group.com).
 
 # Installation Instructions 💻
 

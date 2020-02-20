@@ -22,6 +22,7 @@ Imports:
     devtools,
     knitr,
     rmarkdown,
+    miniUI,
     stats
 RoxygenNote: 7.0.2
 Encoding: UTF-8
