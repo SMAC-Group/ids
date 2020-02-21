@@ -3,6 +3,7 @@
 #' @param input A \code{data frame} coming from the shiny app.
 #' @param rmd A \code{boolean} to indicate if the output should be a RMarkdown file or
 #' simply print output.
+#' @param mobile A \code{bolean} indicating whether the function should be executed in the Shiny mobile or desktop application. Default is \code{FALSE}
 #' @export
 make_files = function(input, rmd = FALSE, mobile = FALSE){
   if (rmd){

@@ -4,13 +4,15 @@
 \alias{make_files}
 \title{Generate RMarkdown file}
 \usage{
-make_files(input, rmd = FALSE)
+make_files(input, rmd = FALSE, mobile = FALSE)
 }
 \arguments{
 \item{input}{A \code{data frame} coming from the shiny app.}
 
 \item{rmd}{A \code{boolean} to indicate if the output should be a RMarkdown file or
 simply print output.}
+
+\item{mobile}{A \code{bolean} indicating whether the function should be executed in the Shiny mobile or desktop application. Default is \code{FALSE}}
 }
 \description{
 This function generates RMarkdown file.
